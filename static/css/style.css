@@ -1989,6 +1989,7 @@ body {
 .box-ourFormu .inner-gap-1 .common-title-5 {
   padding: 4px 0 49px 0;
   font-size: 24px;
+  position: relative;
 }
 .box-ourFormu .inner-gap-1 .common-title-5::after {
   content: "";
@@ -2865,7 +2866,7 @@ body {
     background-position: 100% 0;
   }
   .sub-top-info .inner-gap-1 {
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 120px;
   }
   .sub-top-info .inner-gap-1 .top-img {
@@ -3245,15 +3246,15 @@ body {
     letter-spacing: 0.01em;
   }
   .box-ourFormu .inner-gap-1 {
-    padding-top: 106px;
-    padding-bottom: 100px;
+    padding-top: 115px;
+    padding-bottom: 76px;
   }
   .box-ourFormu .inner-gap-1 .flex {
     display: flex;
     flex-direction: row;
   }
   .box-ourFormu .inner-gap-1 .flex .gap-1 {
-    flex: 0 0 34vw;
+    flex: 0 0 29vw;
   }
   .box-ourFormu .inner-gap-1 .flex .gap-1 .sign {
     width: 44px;
@@ -3280,11 +3281,11 @@ body {
   .box-ourFormu .inner-gap-1 .img-1 {
     width: 121%;
     max-width: 1055px;
-    margin-top: 0;
+    margin-top: -132px;
     margin-bottom: 0;
   }
   .box-ourFormu .inner-gap-1 .common-title-1 {
-    padding-bottom: 62px;
+    padding-bottom: 42px;
   }
   .box-ourFormu .inner-gap-1 .common-title-5 {
     line-height: 53px;
@@ -3300,7 +3301,7 @@ body {
   .box-ourFormu .inner-gap-1 .common-title-6 {
     font-size: 18px;
     line-height: 26px;
-    padding-bottom: 116px;
+    padding-bottom: 42px;
   }
   .box-process .inner-gap-1 {
     padding-top: 128px;

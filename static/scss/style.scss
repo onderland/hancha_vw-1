@@ -2086,6 +2086,7 @@ body {
 		.common-title-5 {
 			padding: 4px 0 49px 0;
 			font-size: 24px;
+			position: relative;
 			&::after {
 				content: "";
 				display: block;
@@ -3024,7 +3025,8 @@ body {
 		background: url(../images/bg/pc_pattern_02.png) no-repeat;
 		background-position: 100% 0;
 		.inner-gap-1 {
-			padding-top: 120px;
+			//padding-top: 120px;
+			padding-top: 80px;
 			padding-bottom: 120px;
 			.top-img {
 				margin-bottom: 0;
@@ -3436,13 +3438,15 @@ body {
 	}
 	.box-ourFormu {
 		.inner-gap-1 {
-			padding-top: 106px;
-			padding-bottom: 100px;
+			//padding-top: 106px;
+			padding-top:115px;
+			//padding-bottom: 100px;
+			padding-bottom:76px;
 			.flex {
 				display: flex;
 				flex-direction: row;
 				.gap-1 {
-					flex: 0 0 34vw;
+					flex: 0 0 29vw;
 					.sign {
 						width: 44px;
 					}
@@ -3470,11 +3474,13 @@ body {
 			.img-1 {
 				width: 121%;
 				max-width: 1055px;
-				margin-top: 0;
+				//margin-top: 0;
+				margin-top:-132px;
 				margin-bottom: 0;
 			}
 			.common-title-1 {
-				padding-bottom: 62px;
+				//padding-bottom: 62px;
+				padding-bottom:42px;
 			}
 			.common-title-5 {
 				line-height: 53px;
@@ -3490,7 +3496,7 @@ body {
 			.common-title-6 {
 				font-size: 18px;
 				line-height: 26px;
-				padding-bottom: 116px;
+				padding-bottom: 42px;
 			}
 		}
 	}
