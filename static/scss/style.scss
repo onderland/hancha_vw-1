@@ -1651,13 +1651,13 @@ body {
 				.item {
 					width: 156px;
 					box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.08);
-					border-radius: 16px;
+					border-radius: 8px;
 				}
 				.box {
 					width: 156px;
 					height: 104px;
 					background: #fff;
-					border-radius: 16px 16px 0 0;
+					border-radius: 8px 8px 0 0;
 					position: relative;
 					&.blue {
 						color: #fff;
@@ -1676,7 +1676,7 @@ body {
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 20px;
-					border-radius: 0 0 16px 16px;
+					border-radius: 0 0 8px 8px;
 					border-top: 1px solid #f1f1f1;
 				}
 			}
@@ -3296,6 +3296,7 @@ body {
 					.item {
 						width: 280px;
 						box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.08);
+						border-radius: 16px;
 						& + .item {
 							margin-top: 0;
 							margin-left: 48px;
@@ -3304,12 +3305,14 @@ body {
 					.box {
 						width: 280px;
 						height: 206px;
+						border-radius: 16px 16px 0 0;
 					}
 					.info {
 						width: 280px;
 						padding: 24px 0;
 						font-size: 18px;
 						line-height: 26px;
+						border-radius: 0 0 16px 16px;
 					}
 				}
 				.txt-2 {

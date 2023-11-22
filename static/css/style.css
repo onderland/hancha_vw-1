@@ -1572,13 +1572,13 @@ body {
 .hancha-bi .inner-gap-1 .bi-bottom .flex .item {
   width: 156px;
   box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.08);
-  border-radius: 16px;
+  border-radius: 8px;
 }
 .hancha-bi .inner-gap-1 .bi-bottom .flex .box {
   width: 156px;
   height: 104px;
   background: #fff;
-  border-radius: 16px 16px 0 0;
+  border-radius: 8px 8px 0 0;
   position: relative;
 }
 .hancha-bi .inner-gap-1 .bi-bottom .flex .box.blue {
@@ -1597,7 +1597,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 8px 8px;
   border-top: 1px solid #f1f1f1;
 }
 .hancha-bi .inner-gap-1 .bi-bottom .txt-2 {
@@ -3098,6 +3098,7 @@ body {
   .hancha-bi .inner-gap-1 .bi-bottom .flex .item {
     width: 280px;
     box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
   }
   .hancha-bi .inner-gap-1 .bi-bottom .flex .item + .item {
     margin-top: 0;
@@ -3106,12 +3107,14 @@ body {
   .hancha-bi .inner-gap-1 .bi-bottom .flex .box {
     width: 280px;
     height: 206px;
+    border-radius: 16px 16px 0 0;
   }
   .hancha-bi .inner-gap-1 .bi-bottom .flex .info {
     width: 280px;
     padding: 24px 0;
     font-size: 18px;
     line-height: 26px;
+    border-radius: 0 0 16px 16px;
   }
   .hancha-bi .inner-gap-1 .bi-bottom .txt-2 {
     font-size: 24px;
