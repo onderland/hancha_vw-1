@@ -1356,7 +1356,8 @@ body {
 // SUB 공통
 .sub-top {
 	width: 100%;
-	height: 400px;
+	//height: 400px;
+	height: 340px;
 	position: relative;
 	background-position: center;
 	background-size: cover !important;
@@ -1480,6 +1481,7 @@ body {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				margin-left:-16px;
 			}
 		}
 	}
@@ -2094,7 +2096,7 @@ body {
 				height: 1px;
 				background: #000;
 				position: absolute;
-				bottom: 12px;
+				bottom: 24px;
 				left: 0;
 			}
 		}
@@ -3411,6 +3413,7 @@ body {
 				max-width: 100%;
 				height: 480px;
 				img {
+					margin-left:0;
 				}
 			}
 			.text-box {
