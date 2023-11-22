@@ -963,6 +963,9 @@ body {
 }
 .box-aboutUs .right .common-title-2 {
   padding-bottom: 14px;
+  font-size: 28px;
+  line-height: 37px;
+  font-weight: 500;
 }
 .box-aboutUs .right .txt-1 {
   color: #4b4b4b;
@@ -1003,6 +1006,7 @@ body {
   padding-top: 0;
   padding-bottom: 12px;
   margin-bottom: 0;
+  font-weight: 500;
 }
 .box-teaStory .inner-gap-1 .txt-1 {
   color: #fff;
@@ -2207,6 +2211,40 @@ body {
 .padding50 .inner-gap-1 {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.padding50 .box-bestProducts {
+  background-position: right 0;
+}
+.padding50 .box-bestProducts .inner-gap-1 {
+  padding-top: 41px;
+  padding-bottom: 27px;
+}
+.padding50 .box-aboutUs .inner-gap-1 {
+  padding-top: 0;
+  padding-bottom: 49px;
+}
+.padding50 .box-aboutUs .right .common-title-2 {
+  padding-top: 20px;
+  padding-bottom: 13px;
+}
+.padding50 .box-teaStory .inner-gap-1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.padding50 .box-brand .inner-gap-1 {
+  padding-top: 53px;
+}
+.padding50 .box-brand .gap {
+  margin-bottom: 31px;
+}
+.padding50 .footer .inner-gap-1 {
+  padding-bottom: 80px;
+}
+.padding50 .footer .ft-top {
+  padding-bottom: 29px;
+}
+.padding50 .footer .ft-bottom {
+  padding-top: 31px;
 }
 
 /* 1024 이상 */
@@ -3615,6 +3653,10 @@ body {
   }
   .box-contact .inner-gap-1 .right iframe {
     min-height: 500px;
+  }
+  .padding50 .inner-gap-1 {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 /* //1024 이상 */
