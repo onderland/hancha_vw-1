@@ -947,12 +947,22 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+.box-aboutUs .left span {
+  display: block;
+  width: 100%;
+  height: 360px;
+}
 .box-aboutUs .left img {
   width: 100%;
-  transform: translate(4px, 12px) scale(1.2);
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .box-aboutUs .right {
-  padding: 45px 16px 0 16px;
+  padding: 0 16px 0 16px;
+}
+.box-aboutUs .right .common-title-2 {
+  padding-bottom: 14px;
 }
 .box-aboutUs .right .txt-1 {
   color: #4b4b4b;
@@ -962,7 +972,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.01em;
-  margin: 0 0 41px 0;
+  margin: 0 0 40px 0;
 }
 .box-aboutUs .right .common-btn-1 {
   margin: 0 auto;
@@ -986,8 +996,13 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.box-teaStory .inner-gap-1 .common-title-3 {
+.box-teaStory .inner-gap-1 .common-title-2 {
+  font-size: 28px;
+  line-height: normal;
+  color: #fff;
+  padding-top: 0;
   padding-bottom: 12px;
+  margin-bottom: 0;
 }
 .box-teaStory .inner-gap-1 .txt-1 {
   color: #fff;
@@ -1001,17 +1016,17 @@ body {
 }
 .box-teaStory .inner-gap-1 .txt-1.mob {
   display: block;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 .box-teaStory .inner-gap-1 .common-btn-2 {
   margin-top: 32px;
 }
 
 .box-brand {
-  background-image: url(../images/bg/pattern.svg);
-  background-size: auto 228px;
+  background-image: url(../images/bg/pc_pattern.svg);
+  background-size: 49%;
   background-repeat: repeat-x;
-  background-position: 0 bottom;
+  background-position: center bottom -170px;
   overflow: hidden;
 }
 .box-brand .inner-gap-1 {
@@ -1344,9 +1359,9 @@ body {
 .sub-bg-info {
   width: 100%;
   position: relative;
-  background: #f8f5ee url(../images/bg/sub_pattern_mob.svg) no-repeat;
-  background-size: 356px;
-  background-position: 0 100%;
+  background: #f8f5ee url(../images/bg/ourstory_bg_mob.png) no-repeat;
+  background-size: 100%;
+  background-position: center 100%;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
@@ -2207,7 +2222,8 @@ body {
     padding: 0 0 43px 0;
   }
   .common-title-2 {
-    font-size: 40px;
+    font-size: 52px;
+    line-height: 70px;
     padding-bottom: 20px;
     margin-bottom: 20px;
     padding-top: 0;
@@ -2282,12 +2298,26 @@ body {
     display: flex;
     flex: 1 1 content;
     align-items: center;
+    gap: 0 50px;
+  }
+  .box-aboutUs .gap > div {
+    width: 100%;
   }
   .box-aboutUs .left {
-    margin-right: 50px;
+    margin-right: 0;
+  }
+  .box-aboutUs .left span {
+    width: 100%;
+    height: 600px;
+    max-width: 920px;
+    display: block;
   }
   .box-aboutUs .left img {
     max-width: 920px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     transform: translate(0, 0) scale(1);
   }
   .box-aboutUs .right {
@@ -2311,7 +2341,9 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .box-teaStory .inner-gap-1 .common-title-3 {
+  .box-teaStory .inner-gap-1 .common-title-2 {
+    font-size: 52px;
+    line-height: 70px;
     padding-bottom: 16px;
   }
   .box-teaStory .inner-gap-1 .txt-1 {
@@ -2585,17 +2617,17 @@ body {
     background-image: url(../images/bg/pc_pattern.svg);
     background-repeat: no-repeat;
     background-size: auto 682px;
-    background-position: right bottom;
+    background-position: right bottom -63px;
   }
   .box-brand .inner-gap-1 {
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 122px;
-    padding-bottom: 120px;
+    padding-top: 88px;
+    padding-bottom: 80px;
   }
   .box-brand .inner-gap-1 .common-title-1 {
     padding-left: 0;
-    padding-bottom: 26px;
+    padding-bottom: 36px;
   }
   .box-brand .gap {
     margin-left: 0;
@@ -3674,7 +3706,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding: 28px 0 0 0;
+    padding: 23px 0 0 0;
   }
   .box-brand .gap .swiper-brand .item a .text-2 .t-1 {
     display: block;
@@ -3688,7 +3720,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
-    height: 104px;
+    height: 108px;
     letter-spacing: 0.01em;
   }
 }
