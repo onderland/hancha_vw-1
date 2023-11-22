@@ -2294,6 +2294,16 @@ body {
 // 공통 mixin include
 @include imgHolder;
 
+// padding50 / 배포시 삭제.
+.padding50{
+	.inner-gap-1 {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	
+}
+
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
 	// 공통 GUIDE

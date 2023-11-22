@@ -1,5 +1,8 @@
 if (window.console == undefined) { console = { log: () => { } } }
 
+// 배포시 삭제 예정.
+document.querySelector('body').classList.add('padding50');
+
 /* device */
 (function (window, undefined) {
 	"use strict";
