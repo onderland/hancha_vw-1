@@ -21,7 +21,7 @@
     <!-- inner-wrap -->
     <div class="inner-wrap">
       <!-- Sub Top banner -->
-      <div class="sub-top" style="background: url(static/images/img/sub_top_1.png) no-repeat; background-position: 78%;">
+      <div class="sub-top" style="background: url(static/images/img/sub_top_0.png) no-repeat; background-position: 84%;">
         <div class="inner-gap-1">
           <p class="txt-1">Our Story</p>
           <p class="txt-2">HANCHA is a Tea Brand for<br>Those Who Pursue a Healthy Lifestyle Through Tea.</p>
@@ -55,7 +55,7 @@
               <p class="txt-1">HANCHA purchasing pleasure for promote the taste and culture of Korean traditions to the world.</p>
               <p class="txt-1">We have the value of providing the best service to consumers with a cup of tea. <br class="mob">
                 We would like to deliver the best taste and quality to consumers by using traditional ingredients used by our ancestors. 
-                HANCHA made with the best blending, <br class="mob">will provide the beauty of taste to people all over the world.
+                <span class="br"></span>HANCHA made with the best blending, <br class="mob">will provide the beauty of taste to people all over the world.
               </p>
             </div>
             <div class="vision-swiper">
@@ -81,26 +81,25 @@
               <img src="static/images/logo/text_logo.svg" alt="HANCHA">
             </div>
             <p class="txt-1">
-              The Brand Identity(BI) expresses the beautiful curved eaves of a <br class="pc">traditional Korean house(hanok) in the color blue, which is one of the five traditional Korean colors. Eaves function to enhance the safety and durability of buildings at the same time as beauty, <br class="pc">and the blue color of Korea contains positive meanings such as harmony with nature, peace, <br class="mob">and happiness. <br>HANCHA adds Korean flavor to this beauty and meaning of Korean tradition.
+              The Brand Identity(BI) expresses the beautiful curved eaves of a <br class="pc">traditional Korean house(hanok) in the color blue, which is one of the five traditional <br class="mob">Korean colors. <br>Eaves function to enhance the safety and durability of buildings at the same time as beauty, <br class="pc">and the blue color of Korea contains positive meanings such as harmony with nature, peace, <br class="mob">and happiness. HANCHA adds Korean flavor to this beauty and meaning of Korean tradition.
             </p>
           </div>
-          <div class="bi-middle">
-            <div class="type">
-              <div class="img-holder">
-                <span>
+          <div class="bi-middle-swiper">
+            <div class="swiper-wrapper">
+              <div class="item swiper-slide">
+                <div class="img">
                   <img src="static/images/logo/hancha_bi_a.svg" alt="">
-                </span>
+                </div>
+                <p class="txt">Type A</p>
               </div>
-              <p class="txt">Type A</p>
-            </div>
-            <div class="type">
-              <div class="img-holder">
-                <span>
+              <div class="item swiper-slide">
+                <div class="img">
                   <img src="static/images/logo/hancha_bi_b.svg" alt="">
-                </span>
+                </div>
+                <p class="txt">Type B</p>
               </div>
-              <p class="txt">Type B</p>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
           <div class="bi-bottom">
             <p class="txt-1">Color System</p>
@@ -148,6 +147,7 @@
       depth: "1"
     })
     subVisionSw.initialize();
+    subBiSw.initialize();
   </script>
 
 </body>

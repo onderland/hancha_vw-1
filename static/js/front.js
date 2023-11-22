@@ -1,7 +1,7 @@
 if (window.console == undefined) { console = { log: () => { } } }
 
 // 배포시 삭제 예정.
-document.querySelector('body').classList.add('padding50');
+// document.querySelector('body').classList.add('padding50');
 
 /* device */
 (function (window, undefined) {
@@ -308,7 +308,7 @@ document.querySelector('body').classList.add('padding50');
 			var subVisionSw = new Swiper(".vision-swiper", {
 				slidesPerView: 1.09,
 				slidesPerGroup: 1,
-				spaceBetween: 8,
+				spaceBetween: 16,
 				simulateTouch: true,
 				loop: false,
 				speed: 600,
@@ -323,6 +323,40 @@ document.querySelector('body').classList.add('padding50');
 	};
 
 	window.subVisionSw = subVisionSw;
+}(window));
+
+/* Sub - ourStory > BI */
+(function (window, undefined) {
+	"use strict";
+	var subBiSw = {
+		bind: subBiSw,
+		initialize: function () {
+			const me = this;
+
+			me._init();
+		},
+		_init: () => {
+			var subBiSw = new Swiper(".bi-middle-swiper", {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+				simulateTouch: true,
+				loop: false,
+				speed: 600,
+				pagination: {
+					el: ".swiper-pagination",
+				},
+				breakpoints: {
+					1024: {  //브라우저가 1024보다 클 때
+						slidesPerView: 2,
+						spaceBetween: 220,
+					},
+				},
+			});
+		}
+	};
+
+	window.subBiSw = subBiSw;
 }(window));
 
 /* Sub - products > detail Ingredients */
