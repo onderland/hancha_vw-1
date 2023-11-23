@@ -2473,6 +2473,12 @@ body {
 .teaStory-detail {
 	background-color: #f8f5ee;
 	padding: 50px 16px;
+	.inner-gap-1{
+		padding-left:0;
+		padding-right:0;
+		padding-top:0;
+		padding-bottom:0;
+	}
 	.top-intro {
 		padding: 20px 0 38px 0;
 		.img-1 {
@@ -4225,6 +4231,8 @@ body {
 		.inner-gap-1 {
 			padding-top: 80px;
 			padding-bottom: 49px;
+			padding-left:80px;
+			padding-right:80px;
 		}
 		.top-intro {
 			padding-top: 40px;

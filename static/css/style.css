@@ -2362,6 +2362,12 @@ body {
   background-color: #f8f5ee;
   padding: 50px 16px;
 }
+.teaStory-detail .inner-gap-1 {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .teaStory-detail .top-intro {
   padding: 20px 0 38px 0;
 }
@@ -3960,6 +3966,8 @@ body {
   .teaStory-detail .inner-gap-1 {
     padding-top: 80px;
     padding-bottom: 49px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   .teaStory-detail .top-intro {
     padding-top: 40px;
