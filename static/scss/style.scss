@@ -2338,6 +2338,111 @@ body {
 	}
 }
 
+// teaStories
+.subStory {
+	.inner-gap-1 {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		position: relative;
+		&::before {
+			content: '';
+			width: 142px;
+			height: 160px;
+			background: url(../images/bg/mo_pattern_02.png) no-repeat;
+			background-size: contain !important;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: -1;
+		}
+	}
+	.top-text {
+		width: 100%;
+		position: relative;
+		.txt-1 {
+			color: #4B4B4B;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+			letter-spacing: 0.2px;
+			&.pc-show {
+				display: none
+			}
+		}
+	}
+	.story-list {
+		width: 100%;
+		position: relative;
+		margin-top: 60px;
+		.item {
+			width: 100%;
+			.inner {
+				width: 100%;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				-webkit-tap-highlight-color: transparent;
+				cursor: auto;
+				.txt {
+					width: 100%;
+					position: relative;
+					background: #172E62;
+					padding: 16px 16px 18px;
+					.title {
+						color: #FFF;
+						font-family: Playfair Display;
+						font-size: 24px;
+						font-weight: 600;
+						line-height: 32px;
+						padding-bottom: 18px;
+					}
+					.txt-1 {
+						color: #FFF;
+						font-family: Open Sans;
+						font-size: 18px;
+						font-weight: 500;
+						line-height: 26px;
+						display: none;
+					}
+					.more {
+						color: #FFF;
+						font-size: 14px;
+						font-weight: 500;
+						line-height: normal;
+						position: relative;
+						&::after {
+							content: '';
+							width: 16px;
+							height: 9px;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							right: -26px;
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' fill='none'%3E%3Cg clip-path='url(%23clip0_1990_21573)'%3E%3Cpath d='M11.0975 8.22412L15.2266 4.49998L11.0975 0.775845' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M0.77495 4.5L15.2266 4.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1990_21573'%3E%3Crect width='16' height='9' fill='white' transform='translate(16 9) rotate(-180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-position: center;
+						}
+					}
+				}
+				.img {
+					width: 100%;
+					height: 196px;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+			& + .item {
+				margin-top: 28px;
+			}
+		}
+	}
+}
+
 // 공통 mixin include
 @include imgHolder;
 
@@ -3937,6 +4042,76 @@ body {
 			.right {
 				iframe {
 					min-height: 500px;
+				}
+			}
+		}
+	}
+
+	// teaStories
+	.subStory {
+		.inner-gap-1 {
+			padding-top: 80px;
+			padding-bottom: 100px;
+			&::before {
+				content: '';
+				width: 346px;
+				height: 264px;
+				background: url(../images/bg/story_top_bg.png) no-repeat;
+				right: 14.7%;
+			}
+		}
+		.top-text {
+			.txt-1 {
+				font-size: 18px;
+				line-height: 26px;
+				width: 100%;
+				&.pc-show {
+					display: block;
+				}
+			}
+		}
+		.story-list {
+			margin-top: 80px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 60px 0;
+			.item {
+				width: 31.9%;
+				.inner {
+					cursor: pointer;
+					.txt {
+						padding: 24px 24px 18px;
+						height: 344px;
+						position: relative;
+						.title {
+							font-size: 32px;
+							line-height: 44px;
+							padding-bottom: 16px;
+							width: 80%;
+						}
+						.txt-1 {
+							display: block;
+							width: 90%;
+							letter-spacing: 0.2px;
+						}
+						.more {
+							font-size: 18px;
+							font-weight: 500;
+							line-height: 22px;
+							position: absolute;
+							left: 24px;
+							bottom: 58.5px;
+						}
+					}
+					.img {
+						height: 304px;
+					}
+				}
+				& + .item {
+					margin-top: 0;
 				}
 			}
 		}

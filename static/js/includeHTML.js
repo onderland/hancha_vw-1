@@ -71,6 +71,18 @@ const pageSubLink = (url, id) => {
     go = 'omija.html';
   }else if( url == 'quince' ){
     go = 'quince.html';
+  }else if( url == 'koreantea' ){
+    go = 'koreantea.html';
+  }else if( url == 'teaweek' ){
+    go = 'teaweek.html';
+  }else if( url == 'teaware' ){
+    go = 'teaware.html';
+  }else if( url == 'usage' ){
+    go = 'usage.html';
+  }else if( url == 'teaexpert' ){
+    go = 'teaexpert.html';
+  }else if( url == 'ceremony' ){
+    go = 'ceremony.html';
   }
 
   window.location.assign(go);
