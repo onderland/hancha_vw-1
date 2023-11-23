@@ -2288,6 +2288,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
+  word-break: keep-all;
   display: none;
 }
 .subStory .story-list .item .inner .txt .more {
@@ -3226,8 +3227,7 @@ body {
     letter-spacing: 0.16px;
   }
   .sub-top-info.products-all {
-    background: url(../images/bg/products_pc_pattern.png) no-repeat;
-    background-position: 83% 0;
+    background: none;
   }
   .sub-top-info.products-all::after {
     content: "";
@@ -3243,6 +3243,18 @@ body {
   .sub-top-info.products-all .inner-gap-1 {
     padding-top: 120px;
     padding-bottom: 120px;
+    position: relative;
+  }
+  .sub-top-info.products-all .inner-gap-1::before {
+    content: "";
+    width: 346px;
+    height: 346px;
+    background: url(../images/bg/products_pc_pattern.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 10.9%;
+    z-index: -1;
   }
   .sub-top-info.products-all .inner-gap-1 .common-title-1 {
     font-size: 48px;
@@ -3822,7 +3834,7 @@ body {
     gap: 60px 0;
   }
   .subStory .story-list .item {
-    width: 31.9%;
+    width: 48.5%;
   }
   .subStory .story-list .item .inner {
     cursor: pointer;
@@ -3842,6 +3854,11 @@ body {
     display: block;
     width: 90%;
     letter-spacing: 0.2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
   .subStory .story-list .item .inner .txt .more {
     font-size: 18px;
@@ -4004,6 +4021,12 @@ body {
     line-height: 26px;
     height: 108px;
     letter-spacing: 0.01em;
+  }
+  .subStory .story-list .item {
+    width: 31.9%;
+  }
+  .subStory .story-list .item .inner .txt .txt-1 {
+    -webkit-line-clamp: 3;
   }
 }
 /* 1500 이상 *//*# sourceMappingURL=style.css.map */
