@@ -3954,27 +3954,6 @@ body {
   .subStory .story-list .item + .item {
     margin-top: 0;
   }
-  .padding50 .box-teaStory .inner-gap-1 {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-  .padding50 .box-brand .inner-gap-1 {
-    padding-top: 87px;
-    padding-bottom: 79px;
-  }
-  .padding50 .box-brand .gap {
-    margin-bottom: 50px;
-  }
-  .padding50 .footer .inner-gap-1 {
-    padding-top: 88px;
-    padding-bottom: 100px;
-  }
-  .padding50 .footer .ft-top {
-    padding-bottom: 25px;
-  }
-  .padding50 .footer .ft-bottom {
-    padding-top: 51px;
-  }
   .teaStory-detail {
     padding-top: 0;
   }
