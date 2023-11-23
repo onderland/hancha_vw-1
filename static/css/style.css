@@ -472,7 +472,7 @@ input {
   background: #172e62;
 }
 .footer .inner-gap-1 {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 80px;
 }
 .footer-inner {
@@ -480,7 +480,7 @@ input {
   position: relative;
 }
 .footer-inner .ft-top {
-  padding-bottom: 39px;
+  padding-bottom: 29px;
 }
 .footer-inner .ft-top .left {
   display: none;
@@ -546,7 +546,7 @@ input {
 .footer-inner .ft-bottom {
   width: 100%;
   position: relative;
-  padding-top: 40px;
+  padding-top: 31px;
   border-top: 1px solid #717f9f;
   display: flex;
   flex-direction: column;
@@ -953,7 +953,7 @@ body {
 .box-aboutUs .inner-gap-1 {
   z-index: 10;
   position: relative;
-  padding-bottom: 59px;
+  padding-bottom: 49px;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
@@ -973,7 +973,8 @@ body {
   padding: 0 16px 0 16px;
 }
 .box-aboutUs .right .common-title-2 {
-  padding-bottom: 14px;
+  padding-top: 20px;
+  padding-bottom: 13px;
   font-size: 28px;
   line-height: 37px;
   font-weight: 500;
@@ -1047,13 +1048,14 @@ body {
 .box-brand .inner-gap-1 {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 64px;
+  padding-top: 53px;
+  padding-bottom: 50px;
 }
 .box-brand .inner-gap-1 .common-title-1 {
   padding-left: 16px;
 }
 .box-brand .gap {
-  margin-bottom: 50px;
+  margin-bottom: 31px;
   margin-left: 16px;
   margin-right: 16px;
   padding: 4px 0 10px 0;
@@ -1137,11 +1139,12 @@ body {
 .box-bestProducts {
   background-image: url(../images/bg/mobile_pattern_01.png);
   background-repeat: no-repeat;
-  background-position: right -45px;
+  background-position: right 0;
   overflow: hidden;
 }
 .box-bestProducts .inner-gap-1 {
-  padding-bottom: 35px;
+  padding-top: 41px;
+  padding-bottom: 27px;
 }
 .box-bestProducts #lottie1 {
   display: none;
@@ -2355,45 +2358,6 @@ body {
   height: 100%;
 }
 
-.padding50 .inner-gap-1 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.padding50 .box-bestProducts {
-  background-position: right 0;
-}
-.padding50 .box-bestProducts .inner-gap-1 {
-  padding-top: 41px;
-  padding-bottom: 27px;
-}
-.padding50 .box-aboutUs .inner-gap-1 {
-  padding-top: 0;
-  padding-bottom: 49px;
-}
-.padding50 .box-aboutUs .right .common-title-2 {
-  padding-top: 20px;
-  padding-bottom: 13px;
-}
-.padding50 .box-teaStory .inner-gap-1 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.padding50 .box-brand .inner-gap-1 {
-  padding-top: 53px;
-}
-.padding50 .box-brand .gap {
-  margin-bottom: 31px;
-}
-.padding50 .footer .inner-gap-1 {
-  padding-bottom: 80px;
-}
-.padding50 .footer .ft-top {
-  padding-bottom: 29px;
-}
-.padding50 .footer .ft-bottom {
-  padding-top: 31px;
-}
-
 .teaStory-detail {
   background-color: #f8f5ee;
   padding: 50px 16px;
@@ -2621,6 +2585,8 @@ body {
   .box-aboutUs .right .common-title-2 {
     font-size: 52px;
     line-height: 70px;
+    padding-top: 0;
+    padding-bottom: 19px;
   }
   .box-aboutUs .right .txt-1 {
     font-size: 18px;
@@ -2804,7 +2770,7 @@ body {
     display: block;
   }
   .footer .inner-gap-1 {
-    padding-top: 86px;
+    padding-top: 88px;
     padding-bottom: 100px;
   }
   .footer-inner {
@@ -2913,7 +2879,7 @@ body {
     background-image: url(../images/bg/pc_pattern.svg);
     background-repeat: no-repeat;
     background-size: auto 682px;
-    background-position: right bottom -63px;
+    background-position: right bottom -100px;
   }
   .box-brand .inner-gap-1 {
     padding-left: 80px;
@@ -2928,6 +2894,7 @@ body {
   .box-brand .gap {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 50px;
   }
   .box-brand .gap .swiper-brand .item a .img-holder span {
     padding-top: 116%;
@@ -3987,21 +3954,6 @@ body {
   .subStory .story-list .item + .item {
     margin-top: 0;
   }
-  .padding50 .inner-gap-1 {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-  .padding50 .box-bestProducts .inner-gap-1 {
-    padding-top: 181px;
-    padding-bottom: 107px;
-  }
-  .padding50 .box-aboutUs .inner-gap-1 {
-    padding-bottom: 0;
-  }
-  .padding50 .box-aboutUs .right .common-title-2 {
-    padding-top: 0;
-    padding-bottom: 19px;
-  }
   .padding50 .box-teaStory .inner-gap-1 {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -4188,7 +4140,7 @@ body {
 /* 1500 이상 */
 @media all and (min-width: 1500px) {
   .box-brand .gap .swiper-brand .item a .text-2 {
-    height: 188px;
+    height: 184px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
