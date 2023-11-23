@@ -1,8 +1,5 @@
 if (window.console == undefined) { console = { log: () => { } } }
 
-// 배포시 삭제 예정.
-// document.querySelector('body').classList.add('padding50');
-
 /* device */
 (function (window, undefined) {
 	"use strict";
@@ -450,6 +447,30 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 	window.subRecommendSw = subRecommendSw;
 }(window));
+
+/* story detail */
+(function (window, undefined) {
+	"use strict";
+	var btnTextShow = {
+		bind: btnTextShow,
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: () => {
+			document.querySelectorAll('.teaStory-detail button.btn').forEach(e => {
+				e.addEventListener('click', e => {
+					e.target.parentElement.classList.toggle('text-open');
+				})
+			})
+		}
+	};
+
+	window.btnTextShow = btnTextShow;
+}(window));
+
+btnTextShow.initialize();
 
 // 공통 XMLHttpRequest js 호출
 window.onload = () => {
