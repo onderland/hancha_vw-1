@@ -2414,6 +2414,9 @@ body {
   right: 0;
   height: 35px;
 }
+.teaStory-detail .text-2.oneline::after {
+  display: none;
+}
 .teaStory-detail .box-contentList ul li .img {
   width: 100%;
   height: 200px;
@@ -4237,6 +4240,18 @@ body {
   .teaStory-detail .box-infoText.open .inner-gap-1 .text {
     -webkit-line-clamp: initial;
   }
+  .teaStory-detail .box-infoText.title .inner-gap-1 {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .teaStory-detail .box-infoText.title .inner-gap-1 .tit {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 0;
+  }
+  .teaStory-detail .box-infoText.title .inner-gap-1 .text {
+    margin-top: 33px;
+  }
   .teaStory-detail .box-infoText.koreantea {
     background-image: url(../images/img/koreantea_3.png);
   }
@@ -4251,7 +4266,8 @@ body {
   .teaStory-detail .box-accordion {
     width: 100%;
     position: relative;
-    padding-bottom: 120px;
+    padding-bottom: 0;
+    margin-bottom: -20px;
   }
   .teaStory-detail .box-accordion > ul > li {
     width: 100%;
@@ -4270,44 +4286,57 @@ body {
   }
   .teaStory-detail .box-accordion > ul > li .box-text .inner-text {
     padding: 0 0 18px;
-    display: block;
-    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0 40px;
   }
   .teaStory-detail .box-accordion > ul > li .box-text .inner-text .text-1 {
     display: block;
-    width: 50%;
-    max-width: 740px;
+    width: 100%;
   }
   .teaStory-detail .box-accordion > ul > li .box-text .inner-text .text-1 span {
-    display: block;
     padding-top: 20px;
-    color: #808080;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: -0.02px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .teaStory-detail .box-accordion > ul > li .box-text .inner-text .img {
-    width: 50%;
-    padding: 0 100px;
-    max-width: 740px;
     padding-top: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-top: -52px;
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text .inner-text .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .teaStory-detail .box-accordion > ul > li .box-text.text-open .btn {
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-  .teaStory-detail .box-accordion > ul > li .box-text.text-open .btn::after {
-    transform: rotate(180deg);
+    padding-bottom: 20px;
   }
   .teaStory-detail .box-accordion > ul > li .box-text.text-open .inner-text {
-    display: block;
+    display: flex;
   }
   .teaStory-detail .box-accordion > ul > li + li {
-    margin-top: 32px;
+    margin-top: 102px;
+  }
+  .teaStory-detail .box-cere .cere-img-1 {
+    margin: 39px 0 0 0;
+    width: 100%;
+  }
+  .teaStory-detail .box-cere .flex {
+    padding: 40px;
+    display: flex;
+    gap: 1vw;
+  }
+  .teaStory-detail .box-cere .flex .text-1 {
+    display: block;
+  }
+  .teaStory-detail .box-cere .flex .left,
+  .teaStory-detail .box-cere .flex .right {
+    flex: 0 0 50%;
+  }
+  .teaStory-detail .box-cere .flex .right .text-1 + .text-1 {
+    padding-top: 27px !important;
   }
   .teaStory-detail .box-cere .cere-img-1 {
     margin: 39px 0 0 0;
