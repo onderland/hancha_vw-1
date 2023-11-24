@@ -2429,7 +2429,8 @@ body {
      object-fit: cover;
 }
 .teaStory-detail .box-contentList ul li .box-text {
-  padding: 20px 0 0 0;
+  padding: 20px 0 90px 0;
+  position: relative;
 }
 .teaStory-detail .box-contentList ul li .box-text .btn {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M24.3857 11.3333C23.8657 10.8133 23.0257 10.8133 22.5057 11.3333L15.999 17.84L9.49233 11.3333C8.97233 10.8133 8.13233 10.8133 7.61233 11.3333C7.09233 11.8533 7.09233 12.6933 7.61233 13.2133L15.0657 20.6666C15.5857 21.1866 16.4257 21.1866 16.9457 20.6666L24.399 13.2133C24.9057 12.7066 24.9057 11.8533 24.3857 11.3333Z' fill='black'/%3E%3C/svg%3E");
@@ -2438,14 +2439,17 @@ body {
   height: 32px;
   display: block;
   width: 100%;
-  margin: 20px 0 50px 0;
+  margin: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
 }
 .teaStory-detail .box-contentList ul li .box-text .btn.koreantea {
   margin: 16px 0 47px 0;
 }
 .teaStory-detail .box-contentList ul li .box-text .inner-text {
   display: none;
-  margin: -30px 0 37px 0;
+  margin: 20px 0 0 0;
 }
 .teaStory-detail .box-contentList ul li .box-text.text-open .btn {
   transform: rotate(180deg);
@@ -4192,7 +4196,8 @@ body {
     flex-direction: column;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 34px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .teaStory-detail .box-contentList ul li .box-text .btn {
     display: none;
