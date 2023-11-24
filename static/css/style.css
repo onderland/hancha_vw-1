@@ -2477,9 +2477,6 @@ body {
   bottom: 50px;
   left: 0;
 }
-.teaStory-detail .box-contentList ul li .box-text .btn.koreantea {
-  margin: 16px 0 47px 0;
-}
 .teaStory-detail .box-contentList ul li .box-text .inner-text {
   display: none;
   margin: 20px 0 0 0;
@@ -2492,9 +2489,6 @@ body {
 }
 .teaStory-detail .box-contentList ul li .box-text.text-open .inner-text {
   display: block;
-}
-.teaStory-detail .box-contentList ul li .box-text.num .inner-text {
-  margin: -30px 0 26px 0;
 }
 .teaStory-detail .box-contentList ul li .box-text.num .inner-text .text-1 {
   padding-bottom: 24px;

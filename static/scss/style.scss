@@ -2603,9 +2603,6 @@ body {
 						position: absolute;
 						bottom: 50px;
 						left: 0;
-						&.koreantea {
-							margin: 16px 0 47px 0;
-						}
 					}
 					.inner-text {
 						display: none;
@@ -2627,7 +2624,6 @@ body {
 
 					&.num {
 						.inner-text {
-							margin: -30px 0 26px 0;
 							.text-1 {
 								padding-bottom: 24px;
 								display: block;
