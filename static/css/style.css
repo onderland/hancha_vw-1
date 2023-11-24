@@ -2474,7 +2474,7 @@ body {
   -webkit-line-clamp: initial;
 }
 .teaStory-detail .box-infoText.title .tit {
-  color: #FFF;
+  color: #fff;
   font-family: Playfair Display;
   font-size: 24px;
   font-weight: 600;
@@ -2577,6 +2577,13 @@ body {
 }
 .teaStory-detail .box-accordion > ul > li + li {
   margin-top: 32px;
+}
+.teaStory-detail .box-cere {
+  padding-bottom: 37px;
+}
+.teaStory-detail .box-cere .cere-img-1 {
+  margin: 20px 0 21px 0;
+  width: 100%;
 }
 
 .btn-backList {
@@ -4301,6 +4308,25 @@ body {
   }
   .teaStory-detail .box-accordion > ul > li + li {
     margin-top: 32px;
+  }
+  .teaStory-detail .box-cere .cere-img-1 {
+    margin: 39px 0 0 0;
+    width: 100%;
+  }
+  .teaStory-detail .box-cere .flex {
+    padding: 40px;
+    display: flex;
+    gap: 1vw;
+  }
+  .teaStory-detail .box-cere .flex .text-1 {
+    display: block;
+  }
+  .teaStory-detail .box-cere .flex .left,
+  .teaStory-detail .box-cere .flex .right {
+    flex: 0 0 50%;
+  }
+  .teaStory-detail .box-cere .flex .right .text-1 + .text-1 {
+    padding-top: 27px !important;
   }
 }
 /* //1024 이상 */

@@ -2477,11 +2477,11 @@ body {
 .teaStory-detail {
 	background-color: #f8f5ee;
 	padding: 50px 16px;
-	.inner-gap-1{
-		padding-left:0;
-		padding-right:0;
-		padding-top:0;
-		padding-bottom:0;
+	.inner-gap-1 {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	.top-intro {
 		padding: 20px 0 38px 0;
@@ -2604,7 +2604,7 @@ body {
 		}
 		&.title {
 			.tit {
-				color: #FFF;
+				color: #fff;
 				font-family: Playfair Display;
 				font-size: 24px;
 				font-weight: 600;
@@ -2660,7 +2660,7 @@ body {
 						line-height: 32px;
 						-webkit-tap-highlight-color: transparent;
 						&::after {
-							content: '';
+							content: "";
 							width: 32px;
 							height: 32px;
 							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M24.3857 11.3333C23.8657 10.8133 23.0257 10.8133 22.5057 11.3333L15.999 17.84L9.49233 11.3333C8.97233 10.8133 8.13233 10.8133 7.61233 11.3333C7.09233 11.8533 7.09233 12.6933 7.61233 13.2133L15.0657 20.6666C15.5857 21.1866 16.4257 21.1866 16.9457 20.6666L24.399 13.2133C24.9057 12.7066 24.9057 11.8533 24.3857 11.3333Z' fill='black'/%3E%3C/svg%3E");
@@ -2714,6 +2714,13 @@ body {
 					margin-top: 32px;
 				}
 			}
+		}
+	}
+	.box-cere {
+		padding-bottom: 37px;
+		.cere-img-1 {
+			margin: 20px 0 21px 0;
+			width: 100%;
 		}
 	}
 }
@@ -4392,8 +4399,8 @@ body {
 		.inner-gap-1 {
 			padding-top: 80px;
 			padding-bottom: 49px;
-			padding-left:80px;
-			padding-right:80px;
+			padding-left: 80px;
+			padding-right: 80px;
 		}
 		.top-intro {
 			padding-top: 40px;
@@ -4578,7 +4585,7 @@ body {
 								width: 50%;
 								padding: 0 100px;
 								max-width: 740px;
-								padding-top:0;
+								padding-top: 0;
 								position: absolute;
 								top: 0;
 								right: 0;
@@ -4599,6 +4606,33 @@ body {
 					}
 					& + li {
 						margin-top: 32px;
+					}
+				}
+			}
+		}
+		.box-cere {
+			.cere-img-1 {
+				margin: 39px 0 0 0;
+				width: 100%;
+			}
+			.flex {
+				padding: 40px;
+				display: flex;
+				gap: 1vw;
+				.text-1{
+					display: block;
+				}
+				.left,
+				.right {
+					flex: 0 0 50%;
+				}
+				.left {
+				}
+				.right {
+					.text-1{
+						& + .text-1{
+							padding-top:27px !important;
+						}
 					}
 				}
 			}
