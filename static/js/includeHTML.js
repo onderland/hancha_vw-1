@@ -41,7 +41,6 @@ const pageMainLink = (url, id) => {
 }
 
 // pageSubLink
-// javascript:pageSubLink('throat');
 const pageSubLink = (url, id) => {
   let go = url;
 

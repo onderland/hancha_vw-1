@@ -302,7 +302,6 @@ input {
 .box-header .inner {
   position: relative;
   background: #172e62;
-  z-index: 600;
 }
 .box-header .inner h1 {
   display: flex;
