@@ -76,6 +76,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 				menuBox.classList.toggle('is-active');
 				body.style.overflow = 'hidden';
 				document.querySelector('.footer').classList.toggle('fixed');
+				document.querySelector('#hamburger-1').classList.toggle('is-active');
 			})
 			// menuBox.querySelector('.btn-close').addEventListener('click', () => {
 			// 	menuBox.classList.remove('is-active')

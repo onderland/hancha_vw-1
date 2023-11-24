@@ -336,32 +336,38 @@ input {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			.hamburger .line {
-				width: 16px;
-				height: 2px;
-				background-color: #fff;
-				display: block;
-				margin: 4px auto;
-				border-radius: 10px;
-				-webkit-transition: all 0.3s ease-in-out;
-				-o-transition: all 0.3s ease-in-out;
-				transition: all 0.3s ease-in-out;
-				&#hamburger-1.is-active .line:nth-child(2) {
-					opacity: 0;
+			.hamburger {
+				.line {
+					width: 18px;
+					height: 2px;
+					background-color: #fff;
+					display: block;
+					margin: 4px auto;
+					border-radius: 10px;
+					-webkit-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
 				}
+				&.is-active {
+					.line{
+						width: 24px;
+					}
+					.line:nth-child(1) {
+						-webkit-transform: translateY(6px) rotate(45deg);
+						-ms-transform: translateY(6px) rotate(45deg);
+						-o-transform: translateY(6px) rotate(45deg);
+						transform: translateY(6px) rotate(45deg);
+					}
+					.line:nth-child(2) {
+						opacity: 0;
+					}
 
-				&#hamburger-1.is-active .line:nth-child(1) {
-					-webkit-transform: translateY(13px) rotate(45deg);
-					-ms-transform: translateY(13px) rotate(45deg);
-					-o-transform: translateY(13px) rotate(45deg);
-					transform: translateY(13px) rotate(45deg);
-				}
-
-				&#hamburger-1.is-active .line:nth-child(3) {
-					-webkit-transform: translateY(-13px) rotate(-45deg);
-					-ms-transform: translateY(-13px) rotate(-45deg);
-					-o-transform: translateY(-13px) rotate(-45deg);
-					transform: translateY(-13px) rotate(-45deg);
+					.line:nth-child(3) {
+						-webkit-transform: translateY(-6px) rotate(-45deg);
+						-ms-transform: translateY(-6px) rotate(-45deg);
+						-o-transform: translateY(-6px) rotate(-45deg);
+						transform: translateY(-6px) rotate(-45deg);
+					}
 				}
 			}
 		}
@@ -424,7 +430,7 @@ input {
 		padding: 0 16px;
 		border-top: 1px solid rgba(226, 223, 223, 0.4);
 		> li {
-			margin-top: 42px;
+			margin-top: 38px;
 			&:first-child {
 				margin-top: 40px;
 			}
@@ -611,7 +617,7 @@ input {
 }
 
 // 모바일 햄버거 클릭시 footer fixed
-.mobile{
+.mobile {
 	.footer {
 		&.fixed {
 			position: fixed;
@@ -619,10 +625,17 @@ input {
 			left: 0;
 			right: 0;
 			z-index: 600;
-			.inner-gap-1{
-				padding-top:0;
-				.ft-top{
+			.inner-gap-1 {
+				padding-top: 0;
+				padding-bottom: 60px;
+				.ft-top {
 					display: none;
+				}
+				.ft-bottom {
+					padding-top: 38px;
+					.rights {
+						margin-top: 20px;
+					}
 				}
 			}
 		}
