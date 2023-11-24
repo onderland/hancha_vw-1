@@ -73,13 +73,14 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 			// mobile menu show hide
 			menuBtn.addEventListener('click', () => {
-				menuBox.classList.add('is-active');
+				menuBox.classList.toggle('is-active');
 				body.style.overflow = 'hidden';
+				document.querySelector('.footer').classList.toggle('fixed');
 			})
-			menuBox.querySelector('.btn-close').addEventListener('click', () => {
-				menuBox.classList.remove('is-active')
-				body.style.overflow = '';
-			})
+			// menuBox.querySelector('.btn-close').addEventListener('click', () => {
+			// 	menuBox.classList.remove('is-active')
+			// 	body.style.overflow = '';
+			// })
 
 			// mobile 1뎁스 click
 			for (const item of items) {
@@ -93,8 +94,8 @@ if (window.console == undefined) { console = { log: () => { } } }
 		_scroll: () => {
 			const showNav = gsap.from('[data-include="header"] .box-header', {
 				//yPercent: -200,
-				"opacity":"0",
-				"display":"none",
+				"opacity": "0",
+				"display": "none",
 				paused: true,
 				duration: 0.2
 			}).progress(1);
@@ -103,12 +104,23 @@ if (window.console == undefined) { console = { log: () => { } } }
 				start: "top top",
 				end: 99999,
 				onUpdate: (self) => {
-					// console.log(self.direction)
 					window.onscroll = (e) => {
 						let windowTop = window.scrollY;
-						
-						if ( windowTop > 152 ) {
-							self.direction === -1 ? showNav.play() : showNav.reverse();
+
+						if (windowTop > 152) {
+							self.direction === -1 ? (
+								showNav.play()
+							) : (
+								showNav.reverse()
+							);
+
+							if (document.querySelector('.mobile .box-menu.is-active')) {
+								self.direction === -1 ? (
+									document.querySelector('.footer.fixed').style.display = 'block'
+								) : (
+									document.querySelector('.footer.fixed').style.display = 'none'
+								);
+							}
 						}
 					}
 				}

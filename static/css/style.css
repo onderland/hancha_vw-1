@@ -302,6 +302,7 @@ input {
 .box-header .inner {
   position: relative;
   background: #172e62;
+  z-index: 600;
 }
 .box-header .inner h1 {
   display: flex;
@@ -363,7 +364,7 @@ input {
 
 .box-menu {
   position: fixed;
-  top: 0;
+  top: 92px;
   left: 0;
   right: 0;
   height: 100vh;
@@ -575,6 +576,20 @@ input {
   margin-top: 40px;
 }
 .footer .up-btn {
+  display: none;
+}
+
+.mobile .footer.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 600;
+}
+.mobile .footer.fixed .inner-gap-1 {
+  padding-top: 0;
+}
+.mobile .footer.fixed .inner-gap-1 .ft-top {
   display: none;
 }
 
@@ -4060,8 +4075,8 @@ body {
     right: 14.7%;
   }
   .subStory .top-text .txt-1 {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 32px;
+    line-height: 44px;
     width: 100%;
   }
   .subStory .top-text .txt-1.pc-show {

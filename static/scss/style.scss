@@ -310,6 +310,7 @@ input {
 	.inner {
 		position: relative;
 		background: #172e62;
+		z-index: 600;
 		h1 {
 			display: flex;
 			justify-content: center;
@@ -382,7 +383,7 @@ input {
 // 공통 menu
 .box-menu {
 	position: fixed;
-	top: 0;
+	top: 92px;
 	left: 0;
 	right: 0;
 	height: 100vh;
@@ -606,6 +607,25 @@ input {
 
 	.up-btn {
 		display: none;
+	}
+}
+
+// 모바일 햄버거 클릭시 footer fixed
+.mobile{
+	.footer {
+		&.fixed {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 600;
+			.inner-gap-1{
+				padding-top:0;
+				.ft-top{
+					display: none;
+				}
+			}
+		}
 	}
 }
 
@@ -4343,8 +4363,8 @@ body {
 		}
 		.top-text {
 			.txt-1 {
-				font-size: 18px;
-				line-height: 26px;
+				font-size: 32px;
+				line-height: 44px;
 				width: 100%;
 				&.pc-show {
 					display: block;
@@ -4634,7 +4654,7 @@ body {
 				padding: 40px;
 				display: flex;
 				gap: 1vw;
-				.text-1{
+				.text-1 {
 					display: block;
 				}
 				.left,
@@ -4644,9 +4664,9 @@ body {
 				.left {
 				}
 				.right {
-					.text-1{
-						& + .text-1{
-							padding-top:27px !important;
+					.text-1 {
+						& + .text-1 {
+							padding-top: 27px !important;
 						}
 					}
 				}
@@ -4661,7 +4681,7 @@ body {
 				padding: 40px;
 				display: flex;
 				gap: 1vw;
-				.text-1{
+				.text-1 {
 					display: block;
 				}
 				.left,
@@ -4671,9 +4691,9 @@ body {
 				.left {
 				}
 				.right {
-					.text-1{
-						& + .text-1{
-							padding-top:27px !important;
+					.text-1 {
+						& + .text-1 {
+							padding-top: 27px !important;
 						}
 					}
 				}
