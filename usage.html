@@ -7,6 +7,7 @@
     content="width=device-width, initiainclude-htmll-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
   <title>Hancha</title>
   <link rel="stylesheet" href="static/css/style.css"><!-- 공통 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /><!-- swiper css -->
 </head>
 
 <body>
@@ -19,11 +20,97 @@
   <div class="box-wrap">
     <!-- inner-wrap -->
     <div class="inner-wrap">
+      <!-- teaStory-detail -->
       <div class="teaStory-detail">
-        <div class="title">
-          <h2 class="common-title-8" id="data-title">Exploring Korean Tea Through History</h2>
+        <div class="inner-gap-1">
+          <div class="title">
+            <h2 class="common-title-8" id="data-title">HANCHA Usage for A<br>Tired Body</h2>
+          </div>
+          <div class="top-intro">
+            <div class="img">
+              <img src="static/images/img/usage_1.png" alt="" class="img-1 mo-show">
+              <img src="static/images/img/usage_1_pc.png" alt="" class="img-1 pc-show">
+            </div>
+            <div class="gap-pc side">
+              <p class="text-1">
+                All ingredients have various functions and benefits. Tea, too, has functional characteristics based on the ingredients it contains, and by selecting the right tea for your purpose, you can enjoy a healthier beverage.
+              </p>
+              <p class="text-1">
+                HANCHA is crafted using traditional Korean medicinal herbs, known for their health benefits. The selection of ingredients is based on a wealth of accumulated knowledge about their functional properties, making HANCHA a reliable choice for health-conscious tea drinkers.
+              </p>
+            </div>
+          </div>
+          <!-- box-accordion -->
+          <div class="box-accordion">
+            <div class="storyImg-swiper">
+              <div class="swiper-wrapper">
+                <div class="item swiper-slide">
+                  <img src="static/images/img/usage_2.png" alt="">
+                </div>
+                <div class="item swiper-slide">
+                  <img src="static/images/img/usage_3.png" alt="">
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <div class="box-text">
+                  <button class="btn">1. Colds</button>
+                  <div class="inner-text">
+                    <p class="text-1">Ingredients rich in antioxidants and vitamin C can be helpful for colds. <br>Various herbs have properties to either reduce body temperature or provide essential minerals and vitamin C to nourish your body.
+                      <span>Herbs: elderflower, licorice, cinnamon, ginger, rose hips, rosemary, lemon verbena.</span>
+                    </p>
+                    <div class="img">
+                      <img src="static/images/img/usage_4_1.png" alt="" class="mo-show">
+                      <img src="static/images/img/usage_4_1_pc.png" alt="" class="pc-show">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box-text">
+                  <button class="btn">2. Soothing</button>
+                  <div class="inner-text">
+                    <p class="text-1">Aromatics have a calming effect on the mind. Fragrance plays a significant role in relieving stress, anxiety, and insomnia. Some aromatic herbs can help soothe your senses and alleviate stress.
+                      <span>Herbs: ginger, licorice root, cinnamon.</span>
+                    </p>
+                    <div class="img">
+                      <img src="static/images/img/usage_4_2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box-text">
+                  <button class="btn">3. Digestive Function</button>
+                  <div class="inner-text">
+                    <p class="text-1">Herbs known for functions such as detoxification and anti-inflammatory effects are said to be beneficial for digestion. This herb helps soothe the stomach and is believed to assist in promoting restful sleep when taken after an evening meal.
+                      <span>Herbs: chamomile, lavender, lemon verbena, basil.</span>
+                    </p>
+                    <div class="img">
+                      <img src="static/images/img/usage_4_3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- //box-accordion -->
+          <!-- box-infoText -->
+          <div class="box-infoText conterol-text usage title">
+            <div class="inner-gap-1">
+              <div class="tit">4. Detoxification</div>
+              <div class="text">
+                Some herbs can help remove various harmful chemicals from the body. These ingredients help remove toxins from the body directly by attaching themselves to harmful heavy metals and facilitating their excretion through the digestive system. Herbs such as ginger, dandelion, burdock, licorice root contribute to detoxification. Using HANCHA for a refreshing and restorative cup of tea can be a great way to support the recovery of your tired body.
+              </div>
+              <button class="common-btn-5 moreBtn">Read more</button>
+            </div>
+          </div>
+          <!-- //box-infoText -->
+          <a href="javascript:pageSubLink('teaStories');" class="btn-backList"><span>Back to List</span></a>
         </div>
       </div>
+      <!-- //teaStory-detail -->
     </div>
   </div>
   <!-- //inner-wrap -->
@@ -43,11 +130,25 @@
   <script src="static/js/front.js"></script>
   <!-- //공통 js -->
 
+  <!-- swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- //swiper.js -->
+
+
   <script>
     // 페이지 활성화 is-active
     menuSelectKey({
       depth: "3"
     })
+
+    // more btn
+    const moreBtn = document.querySelector('.moreBtn');
+
+    moreBtn.addEventListener('click', () => {
+      document.querySelector('.conterol-text').classList.toggle('open');
+    })
+
+    subStoryImgSw.initialize();
   </script>
 
 </body>

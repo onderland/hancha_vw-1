@@ -2452,11 +2452,19 @@ body {
 .teaStory-detail .box-contentList ul li .box-text.text-open .inner-text {
   display: block;
 }
+.teaStory-detail .box-contentList ul li .box-text.num .inner-text {
+  margin: -30px 0 26px 0;
+}
+.teaStory-detail .box-contentList ul li .box-text.num .inner-text .text-1 {
+  padding-bottom: 24px;
+  display: block;
+}
 .teaStory-detail .box-infoText {
   margin-bottom: 50px;
 }
 .teaStory-detail .box-infoText .inner-gap-1 {
   padding: 27px 16px;
+  min-height: 200px;
 }
 .teaStory-detail .box-infoText .inner-gap-1 .text {
   letter-spacing: 0.1px;
@@ -2465,8 +2473,110 @@ body {
 .teaStory-detail .box-infoText.open .inner-gap-1 .text {
   -webkit-line-clamp: initial;
 }
+.teaStory-detail .box-infoText.title .tit {
+  color: #FFF;
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  padding-bottom: 16px;
+}
+.teaStory-detail .box-infoText.title .text {
+  -webkit-line-clamp: 2;
+}
 .teaStory-detail .box-infoText.koreantea {
   background-image: url(../images/img/koreantea_3.png);
+}
+.teaStory-detail .box-infoText.usage {
+  background-image: url(../images/img/usage_5.png);
+}
+.teaStory-detail .storyImg-swiper {
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  padding: 0 16px 50px;
+  position: relative;
+}
+.teaStory-detail .storyImg-swiper .item {
+  width: 100%;
+  height: 200px;
+}
+.teaStory-detail .storyImg-swiper .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.teaStory-detail .box-accordion {
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+.teaStory-detail .box-accordion > ul > li .box-text {
+  width: 100%;
+  position: relative;
+}
+.teaStory-detail .box-accordion > ul > li .box-text .btn {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+  color: #171717;
+  font-family: Playfair Display;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  -webkit-tap-highlight-color: transparent;
+}
+.teaStory-detail .box-accordion > ul > li .box-text .btn::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M24.3857 11.3333C23.8657 10.8133 23.0257 10.8133 22.5057 11.3333L15.999 17.84L9.49233 11.3333C8.97233 10.8133 8.13233 10.8133 7.61233 11.3333C7.09233 11.8533 7.09233 12.6933 7.61233 13.2133L15.0657 20.6666C15.5857 21.1866 16.4257 21.1866 16.9457 20.6666L24.399 13.2133C24.9057 12.7066 24.9057 11.8533 24.3857 11.3333Z' fill='black'/%3E%3C/svg%3E");
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.teaStory-detail .box-accordion > ul > li .box-text .inner-text {
+  padding: 20px 0 18px;
+  width: 100%;
+  position: relative;
+  display: none;
+}
+.teaStory-detail .box-accordion > ul > li .box-text .inner-text .text-1 span {
+  display: block;
+  padding-top: 20px;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02px;
+}
+.teaStory-detail .box-accordion > ul > li .box-text .inner-text .img {
+  width: 100%;
+  padding-top: 8px;
+}
+.teaStory-detail .box-accordion > ul > li .box-text .inner-text .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.teaStory-detail .box-accordion > ul > li .box-text.text-open .btn {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.teaStory-detail .box-accordion > ul > li .box-text.text-open .btn::after {
+  transform: rotate(180deg);
+}
+.teaStory-detail .box-accordion > ul > li .box-text.text-open .inner-text {
+  display: block;
+}
+.teaStory-detail .box-accordion > ul > li + li {
+  margin-top: 32px;
 }
 
 .btn-backList {
@@ -4080,6 +4190,16 @@ body {
     display: block;
     margin-top: 0;
   }
+  .teaStory-detail .box-contentList ul li .box-text.num {
+    padding-top: 24px;
+  }
+  .teaStory-detail .box-contentList ul li .box-text.num .inner-text {
+    margin-top: 0;
+  }
+  .teaStory-detail .box-contentList ul li .box-text.num .inner-text .text-1 {
+    padding-bottom: 0;
+    line-height: 30px;
+  }
   .teaStory-detail .box-contentList ul li.order .img {
     order: 1;
   }
@@ -4112,6 +4232,75 @@ body {
   }
   .teaStory-detail .box-infoText.koreantea {
     background-image: url(../images/img/koreantea_3.png);
+  }
+  .teaStory-detail .storyImg-swiper {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 0 120px;
+  }
+  .teaStory-detail .storyImg-swiper .item {
+    height: 600px;
+  }
+  .teaStory-detail .box-accordion {
+    width: 100%;
+    position: relative;
+    padding-bottom: 120px;
+  }
+  .teaStory-detail .box-accordion > ul > li {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text .btn {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    border-bottom: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: none;
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text .btn::after {
+    display: none;
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text .inner-text {
+    padding: 0 0 18px;
+    display: block;
+    position: relative;
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text .inner-text .text-1 {
+    display: block;
+    width: 50%;
+    max-width: 740px;
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text .inner-text .text-1 span {
+    display: block;
+    padding-top: 20px;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.02px;
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text .inner-text .img {
+    width: 50%;
+    padding: 0 100px;
+    max-width: 740px;
+    padding-top: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text.text-open .btn {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text.text-open .btn::after {
+    transform: rotate(180deg);
+  }
+  .teaStory-detail .box-accordion > ul > li .box-text.text-open .inner-text {
+    display: block;
+  }
+  .teaStory-detail .box-accordion > ul > li + li {
+    margin-top: 32px;
   }
 }
 /* //1024 이상 */

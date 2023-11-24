@@ -470,6 +470,38 @@ if (window.console == undefined) { console = { log: () => { } } }
 	window.btnTextShow = btnTextShow;
 }(window));
 
+/* Sub - teaStory > detail img swiper */
+(function (window, undefined) {
+	"use strict";
+	var subStoryImgSw = {
+		bind: subStoryImgSw,
+		initialize: function () {
+			const me = this;
+
+			me._init();
+		},
+		_init: () => {
+			var subStoryImgSw = new Swiper(".storyImg-swiper", {
+				slidesPerView: 1.25,
+				slidesPerGroup: 1,
+				spaceBetween: 16,
+				simulateTouch: true,
+				loop: false,
+				speed: 600,
+				breakpoints: {
+					1024: {  //브라우저가 1024보다 클 때
+						slidesPerView: 2,
+						spaceBetween: 40,
+					},
+				},
+			});
+		}
+	};
+
+	window.subStoryImgSw = subStoryImgSw;
+}(window));
+
+
 btnTextShow.initialize();
 
 // 공통 XMLHttpRequest js 호출
