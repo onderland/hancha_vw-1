@@ -23,50 +23,34 @@
       <div class="teaStory-detail">
         <div class="inner-gap-1">
           <div class="title">
-            <h2 class="common-title-8" id="data-title">Approaching<br>Tea with Reverence</h2>
+            <h2 class="common-title-8" id="data-title">Exploring Korean <br class="pc-show">Tea Through History</h2>
           </div>
           <div class="top-intro">
-            <img src="static/images/img/teaweek_1.jpg" alt="" class="img-1 mo-show">
-            <img src="static/images/img/teaweek_1_pc.jpg" alt="" class="img-1 pc-show">
-            <div class="gap-pc">
+            <div class="img">
+              <img src="static/images/img/koreantea_1.png" alt="" class="img-1">
+            </div>
+            <div class="gap-pc side">
               <p class="text-1">
-                In the midst of a fast-paced and complex world, would you like to explore the aesthetics of slowness?
+                One unique way to appreciate culture is by delving into its history. Korean tea history dates back to the 7th century when tea culture started in Korea. It is documented that tea seeds were brought from China and planted in the southern region, particularly on Mount Jiri, the highest mountain in the south.
               </p>
               <p class="text-1">
-                Experience Korean tea culture through "Dado" and "Darye," which are rooted in the spirits of our ancestors, who sought to find relaxation for their bodies and minds.
+                As a result, the regions of Yeongnam and Honam, centered around Mount Jiri, became the homeland of Korean tea. The climate and geographical conditions in these areas were well-suited for the cultivation of tea trees, and they have remained the primary tea cultivation regions in Korea to this day. 
               </p>
             </div>
           </div>
           <!-- box-contentList -->
           <div class="box-contentList">
             <ul>
-              <li class="order">
-                <p class="img"><img src="static/images/img/teaweek_2.jpg" alt=""></p>
-                <div class="box-text">
-                  <p class="text-2">
-                    Cultivating the Mind<br class="mo-show"> and Body Through "Dado"
-                  </p>
-                  <button class="btn"></button>
-                  <div class="inner-text">
-                    <p class="text-1">
-                      "Dado" is defined as the practice of cultivating the body and mind through the entire process of picking tea leaves, manufacturing tea, and brewing and drinking it.
-                    </p>
-                    <p class="text-1">
-                      It involves kindling a fire, boiling water, brewing tea in well-boiled water, serving tea to guests, and engaging in conversations. Amid a world that's rapidly changing, try to heal your weary body and mind at a slower pace.
-                    </p>
-                  </div>
-                </div>
-              </li>
               <li>
-                <p class="img"><img src="static/images/img/teaweek_3.jpg" alt=""></p>
+                <p class="img"><img src="static/images/img/koreantea_2.png" alt=""></p>
                 <div class="box-text">
                   <p class="text-2">
-                    Learning the Etiquette of Tea<br> through "Darye"
+                    HANCHA, <br class="pc-show">Located in the Southern Part of the <br class="mo-show">Korean Peninsula
                   </p>
-                  <button class="btn"></button>
+                  <button class="btn koreantea"></button>
                   <div class="inner-text">
                     <p class="text-1">
-                      "Darye" encompasses the etiquette and rituals observed when dealing with tea, especially when it comes to drinking tea. In Korean history, it is documented that "Darye" was practiced during various royal ceremonies, underscoring the importance of the mindset when handling tea. The teaware used when drinking tea in Korea also reflects the spirit of "Darye."
+                      Korea has diverse climate conditions based on its geographical location. HANCHA is situated in the southern part of the Korean Peninsula, which is the primary region for tea cultivation.
                     </p>
                   </div>
                 </div>
@@ -74,6 +58,16 @@
             </ul>
           </div>
           <!-- //box-contentList -->
+          <!-- box-infoText -->
+          <div class="box-infoText conterol-text koreantea">
+            <div class="inner-gap-1">
+              <div class="text">
+                It benefits from favorable climatic conditions and a healthy environment, allowing the production of delicious and health-promoting tea products. HANCHA aims to provide premium products made from traditional herbal ingredients, offering a delightful taste and functional benefits.
+              </div>
+              <button class="common-btn-5 moreBtn">Read more</button>
+            </div>
+          </div>
+          <!-- //box-infoText -->
           <a href="javascript:pageSubLink('teaStories');" class="btn-backList"><span>Back to List</span></a>
         </div>
       </div>
@@ -101,6 +95,13 @@
     // 페이지 활성화 is-active
     menuSelectKey({
       depth: "3"
+    })
+
+    // more btn
+    const moreBtn = document.querySelector('.moreBtn');
+
+    moreBtn.addEventListener('click', () => {
+      document.querySelector('.conterol-text').classList.toggle('open');
     })
   </script>
 
