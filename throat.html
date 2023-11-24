@@ -30,11 +30,45 @@
             <div class="right">
               <p class="common-title-1" id="data-title">THROAT COMFORT Tea</p>
               <p class="txt-1">SOOTHE THE THROAT*</p>
-              <div class="text-box">
-                <p class="tit">Soothe With Minds</p>
-                <p class="txt">Throat Comfort is the tea that can soothe your body warm by blending balloon flower and ginger, which are known to be good for the bronchial tubes. It is made so that anyone can enjoy it without any burden by adding flavor to quince and cinnamon. Relax your throat with a cup of Throat comfort tea.</p>
-                <p class="txt">* Add one tea bag to a cup of hot water(8 oz), let steep for 3-5 minutes and enjoy.</p>
-              </div>
+              <ul class="tea-info">
+                <li class="item">
+                  <div class="img">
+                    <img src="static/images/img/products_icon_1.png" alt="">
+                  </div>
+                  <div class="txt">
+                    <p class="txt-1">HERBAL POWER</p>
+                    <p class="txt-2">This blend supports throat health</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="img">
+                    <img src="static/images/img/products_icon_2.png" alt="">
+                  </div>
+                  <div class="txt">
+                    <p class="txt-1">TASTE</p>
+                    <p class="txt-2">Silky, savory, slightly sweet and spicy notes</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="img">
+                    <img src="static/images/img/products_icon_3.png" alt="">
+                  </div>
+                  <div class="txt">
+                    <p class="txt-1">PERSONALITY</p>
+                    <p class="txt-2">Protective, smooth, and gallant</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="img">
+                    <img src="static/images/img/products_icon_4.png" alt="">
+                  </div>
+                  <div class="txt">
+                    <p class="txt-1">CAFFEINE LEVEL</p>
+                    <p class="txt-2">Caffeine Free</p>
+                  </div>
+                </li>
+              </ul>
+              <span class="noti-txt">* These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease</span>
             </div>
           </div>
         </div>
@@ -43,59 +77,92 @@
       <!-- products Detail Ingredients -->
       <div class="box-ingredients">
         <div class="inner-gap-1">
-          <p class="common-title-1">Ingredients</p>
-          <div class="ingredient-swiper">
-            <ul class="swiper-wrapper">
-              <li class="item swiper-slide">
-                <div class="img">
-                  <img src="static/images/img/ingredients_img_1_1.png" alt="">
-                </div>
-                <div class="text">
-                  <p class="name">Balloon Flower Root</p>
-                  <p class="txt">It has a slightly warm nature and a spicy, bitter taste.</p>
-                  <p class="txt">• Use it during cold and dry weather</p>
-                </div>
-              </li>
-              <li class="item swiper-slide">
-                <div class="img">
-                  <img src="static/images/img/ingredients_img_1_2.png" alt="">
-                </div>
-                <div class="text">
-                  <p class="name">Cinnamon Bark</p>
-                  <p class="txt">It’s an herbal remedy that warms the body</p>
-                  <p class="txt">• Use when you want to unwind and release tension in the body.</p>
-                </div>
-              </li>
-              <li class="item swiper-slide">
-                <div class="img">
-                  <img src="static/images/img/ingredients_img_1_3.png" alt="">
-                </div>
-                <div class="text">
-                  <p class="name">Quince</p>
-                  <p class="txt">It has a warm nature and a slightly spicy taste without and toxicity.</p>
-                  <p class="txt">• When your voice needs to be calm.</p>
-                </div>
-              </li>
-              <li class="item swiper-slide">
-                <div class="img">
-                  <img src="static/images/img/ingredients_img_1_4.png" alt="">
-                </div>
-                <div class="text">
-                  <p class="name">Ginger</p>
-                  <p class="txt">It has a warm nature and a very spicy taste
-                    without any toxicity.</p>
-                </div>
-              </li>
-              <li class="item swiper-slide">
-                <div class="img">
-                  <img src="static/images/img/ingredients_img_1_5.png" alt="">
-                </div>
-                <div class="text">
-                  <p class="name">Stevia Leaf</p>
-                  <p class="txt">It has a sweet taste.</p>
-                </div>
-              </li>
+          <p class="common-title-1">Peek Inside This Blend</p>
+          <div class="tab-btn" data-event="tabMenu">
+            <ul>
+              <li data-tab="1" class="is-active"><button>ingredients</button></li>
+              <li data-tab="2" class="is-active"><button>how to enjoy</button></li>
+              <li data-tab="3" class="is-active"><button>supplement facts</button></li>
             </ul>
+          </div>
+          <div class="tab-section" data-event="tabMenu-section">
+            <div class="tab-item" data-section="1">
+              <div class="acc-wrap acc-open">
+                <button type="button" class="btn">ingredients</button>
+                <div class="acc-inner">
+                  <div class="ingredient-swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="item swiper-slide">
+                        <div class="img">
+                          <img src="static/images/img/ingredients_img_1_2.png" alt="">
+                        </div>
+                        <div class="text">
+                          <p class="name">Cinnamon Bark</p>
+                          <p class="tit">Description</p>
+                          <p class="txt">It’s an herbal remedy that warms the body</p>
+                          <p class="tit">When to Use</p>
+                          <p class="txt">Immunity: Use when warmth is needed.</p>
+                          <p class="txt">Relaxation: Use when you want to unwind and release tension in the body</p>
+                        </div>
+                      </li>
+                      <li class="item swiper-slide">
+                        <div class="img">
+                          <img src="static/images/img/ingredients_img_1_3.png" alt="">
+                        </div>
+                        <div class="text">
+                          <p class="name">Quince</p>
+                          <p class="tit">Description</p>
+                          <p class="txt">It has a warm nature and a slightly spicy taste.</p>
+                          <p class="tit">When to Use</p>
+                          <p class="txt">Respiratory Health: Use it during cold and dry weather</p>
+                          <p class="txt">Throat Health: When your voice needs to be calm.</p>
+                        </div>
+                      </li>
+                      <li class="item swiper-slide">
+                        <div class="img">
+                          <img src="static/images/img/ingredients_img_1_4.png" alt="">
+                        </div>
+                        <div class="text">
+                          <p class="name">Ginger</p>
+                          <p class="tit">Description</p>
+                          <p class="txt">It has a warm nature and a very spicy taste without any toxicity</p>
+                          <p class="tit">When to Use</p>
+                          <p class="txt">Respiratory Health: When the weather turns cold and dry.</p>
+                          <p class="txt">Seasonal: Use when warmth is needed.</p>
+                        </div>
+                      </li>
+                      <li class="item swiper-slide">
+                        <div class="img">
+                          <img src="static/images/img/ingredients_img_1_5.png" alt="">
+                        </div>
+                        <div class="text">
+                          <p class="name">Stevia Leaf</p>
+                          <p class="tit">Description</p>
+                          <p class="txt">It has a sweet taste.</p>
+                          <p class="tit">When to Use</p>
+                          <p class="txt">Immunity: Use when soothing is needed.</p>
+                        </div>
+                      </li>
+                      <li class="item swiper-slide">
+                        <div class="img">
+                          <img src="static/images/img/ingredients_img_1_1.png" alt="">
+                        </div>
+                        <div class="text">
+                          <p class="name">Balloon Flower Root</p>
+                          <p class="tit">Description</p>
+                          <p class="txt">It has a slightly warm nature and a spicy, bitter taste.</p>
+                          <p class="tit">When to Use</p>
+                          <p class="txt">Respiratory Health: Use it during cold and dry weather.</p>
+                          <p class="txt">Throat Health: Use it when you need to soothe your throat.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-item" data-section="2">2번 영역</div>
+            <div class="tab-item" data-section="3">3번 영역</div>
           </div>
           <p class="common-title-1 small">Supplement Facts</p>
           <p class="txt-1">Serving Size 1 tea bag (Makes 8 fl oz) Servings Per Container 20</p>
@@ -192,6 +259,8 @@
     })
     subIngredientsSw.initialize();
     subRecommendSw.initialize();
+    tabMenu.initialize();
+    accShow.initialize();
   </script>
 
 </body>

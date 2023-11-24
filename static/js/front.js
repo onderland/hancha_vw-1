@@ -384,15 +384,19 @@ if (window.console == undefined) { console = { log: () => { } } }
 			me._init();
 		},
 		_init: () => {
+			let swiperSubNum2 = document.querySelectorAll('.ingredient-swiper .item').length; // swiper item length
+
 			var subIngredientsSw = new Swiper(".ingredient-swiper", {
-				slidesPerView: 'auto',
+				slidesPerView: 1.25,
 				slidesPerGroup: 1,
-				spaceBetween: -16,
+				spaceBetween: 0,
 				simulateTouch: true,
-				loop: false,
+				loop: true,
 				speed: 600,
 				// autoHeight: true,
 				centeredSlides: true,
+				loopAdditionalSlides: 3,
+				loopedSlides: swiperSubNum2, //loop 시 파라미터 duplicate 개수 - 정적으로
 				breakpoints: {
 					1024: {  //브라우저가 1024보다 클 때
 						slidesPerView: 5,
@@ -406,21 +410,21 @@ if (window.console == undefined) { console = { log: () => { } } }
 					},
 					600: {  //브라우저가 600보다 클 때
 						slidesPerView: 1.6,
-						spaceBetween: 12,
+						spaceBetween: 0,
 						centeredSlides: true,
 					},
 					480: {  //브라우저가 480보다 클 때
-						slidesPerView: 1.4,
-						spaceBetween: 12,
+						slidesPerView: 1.5,
+						spaceBetween: 0,
 						centeredSlides: true,
 					},
 					420: {  //브라우저가 420보다 클 때
-						slidesPerView: 1.3,
-						spaceBetween: 12,
+						slidesPerView: 1.4,
+						spaceBetween: 0,
 						centeredSlides: true,
 					},
 					372: {  //브라우저가 372보다 클 때
-						slidesPerView: 1.1,
+						slidesPerView: 1.3,
 						spaceBetween: 0,
 						centeredSlides: true,
 					},
@@ -516,6 +520,91 @@ if (window.console == undefined) { console = { log: () => { } } }
 	};
 
 	window.subStoryImgSw = subStoryImgSw;
+}(window));
+
+/* tab menu */
+(function (window, undefined) {
+	"use strict";
+	/**
+	 * @description tab 메뉴 클릭
+	 * @modify
+	*/
+	var tabMenu = {
+		/** 플러그인명 */
+		bind: tabMenu,
+		/** 기본 옵션값 선언부 */
+		defaults: {
+		},
+		/** selector 선언부 */
+		selectors: {
+			tg: '[data-event="tabMenu"]',
+			tg2: '[data-event="tabMenu-section"]'
+		},
+		initialize: function() {
+			const me = this;
+
+			me._click();
+		},
+		_click: function(){
+			const me = this,
+						tg = me.selectors.tg,
+						tg2 = me.selectors.tg2;
+
+			const tgs = document.querySelectorAll(tg + ' li button');
+
+			document.querySelectorAll(tg + ' li').forEach(e => {
+				let item = e.classList.contains('is-active');
+
+				if( item ){
+					const current = e.getAttribute('data-tab');
+					document.querySelector('[data-section="' + current + '"]').classList.add('is-active');
+				}
+			});
+
+			for( const tg of tgs ){
+				tg.onclick = e => {
+					// tab button
+					document.querySelectorAll('[data-event="tabMenu"] li').forEach(item => {
+						item.classList.remove('is-active');
+					});
+					e.target.parentNode.classList.add('is-active');
+
+					// tab 내용
+					const idx = e.target.parentNode.getAttribute('data-tab');
+					
+					document.querySelectorAll(tg2 + ' [data-section]').forEach(e => {
+						e.classList.remove('is-active');
+					});
+
+					document.querySelector(tg2 + ' [data-section="' + idx + '"]').classList.add('is-active');
+				}
+			}
+		}
+	};
+
+	window.tabMenu = tabMenu;
+}(window));
+
+/* products detail */
+(function (window, undefined) {
+	"use strict";
+	var accShow = {
+		bind: accShow,
+		initialize: function () {
+			const me = this;
+
+			me._click();
+		},
+		_click: () => {
+			document.querySelectorAll('.acc-wrap button.btn').forEach(e => {
+				e.addEventListener('click', e => {
+					e.target.parentElement.classList.toggle('acc-open');
+				})
+			})
+		}
+	};
+
+	window.accShow = accShow;
 }(window));
 
 
