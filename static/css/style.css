@@ -275,6 +275,7 @@ textarea:focus {
   font-size: 0;
   height: 0;
   width: 0;
+  display: none;
 }
 
 input {
@@ -856,13 +857,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 63% 0;
-  height: 391px;
+  height: 400px;
   display: flex !important;
   flex-direction: column;
 }
 .main-top-kv .item .inner-gap-1 {
   width: 100%;
-  padding-top: 91px;
+  padding-top: 97px;
   padding-bottom: 0;
 }
 .main-top-kv .item .txt-1 {
@@ -912,7 +913,7 @@ body {
   justify-content: center;
   position: absolute;
   align-items: center;
-  bottom: 60px !important;
+  bottom: 50px !important;
   left: 0;
   right: 0;
   line-height: normal;
@@ -3099,7 +3100,7 @@ body {
     opacity: 0;
   }
   .box-bestProducts .swiper-best .item.swiper-slide-active {
-    min-width: 860px;
+    min-width: 831px;
     overflow: visible;
   }
   .box-bestProducts .swiper-best .item.swiper-slide-active .box-bg {
@@ -3125,7 +3126,7 @@ body {
     transform: translate(-50%, -50%) scale(0);
   }
   .box-bestProducts .swiper-best .item .box-bg .img-holder {
-    transform: scale(0.72);
+    transform: scale(0.67);
   }
   .box-bestProducts .swiper-best .item .box-bg .img-holder span {
     width: 254px;
@@ -3134,7 +3135,7 @@ body {
   .box-bestProducts .swiper-best .item .box-text {
     pointer-events: all;
     width: 335px;
-    margin: 44px 0 0 44px;
+    margin: 26px 0 0 44px;
     display: block;
     transform: translate(-10%, 0);
     height: 0;
@@ -3148,10 +3149,10 @@ body {
   }
   .box-bestProducts .swiper-best .item .box-text .txt-2 {
     text-align: left;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 26px;
     letter-spacing: 0.01em;
-    padding: 0 0 31px 0;
+    padding: 4px 36px 31px 0;
   }
   .box-bestProducts .swiper-best .item .box-text .btn {
     width: 252px;

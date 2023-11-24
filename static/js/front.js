@@ -224,8 +224,12 @@ if (window.console == undefined) { console = { log: () => { } } }
 					prevEl: '.box-bestProducts .swiper-button-prev',
 				},
 				breakpoints: {
-					1700: {  //브라우저가 1700보다 클 때3
-						slidesPerView: 7.7,
+					1800: {  //브라우저가 1700보다 클 때
+						slidesPerView: 7.6,
+						centeredSlides: false,
+					},
+					1700: {  //브라우저가 1700보다 클 때
+						slidesPerView: 6.5,
 						centeredSlides: false,
 					},
 					1600: {  //브라우저가 1600보다 클 때
@@ -237,7 +241,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 						centeredSlides: false,
 					},
 					1280: {  //브라우저가 1280보다 클 때
-						slidesPerView: 4.8,
+						slidesPerView: 2,
 						centeredSlides: false,
 					},
 					1024: {  //브라우저가 1024보다 클 때
