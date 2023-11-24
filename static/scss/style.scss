@@ -1785,11 +1785,10 @@ body {
 				align-items: center;
 				justify-content: space-between;
 				flex-wrap: wrap;
-				gap: 24px 0;
+				gap: 40px 0;
 				.item {
 					width: 48%;
 					position: relative;
-					background: #f8f5ee;
 					a {
 						width: 100%;
 						height: 100%;
@@ -1797,13 +1796,21 @@ body {
 						display: flex;
 						flex-direction: column;
 						align-items: center;
-						padding: 30px 0 57px;
-						cursor: auto;
+						// cursor: auto;
+						.item-box {
+							width: 100%;
+							height: auto;
+							padding: 17.5px 0;
+							background: #f8f5ee;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							position: relative;
+						}
 					}
 					.pd-img {
 						width: 84px;
 						box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.12);
-						margin-bottom: 16px;
 						img {
 							width: 100%;
 							height: 100%;
@@ -1817,11 +1824,14 @@ body {
 						font-size: 14px;
 						font-weight: 500;
 						line-height: 18px;
+						margin-top: 8px;
+						letter-spacing: -0.1px;
 					}
 					.txt-2 {
 						display: none;
 					}
 					.go-btn {
+						display: none;
 						width: 100%;
 						height: fit-content;
 						padding: 12px 0;
@@ -3753,8 +3763,10 @@ body {
 				z-index: -1;
 			}
 			.inner-gap-1 {
-				padding-top: 120px;
-				padding-bottom: 120px;
+				// padding-top: 120px;
+				// padding-bottom: 120px;
+				padding-top: 80px;
+				padding-bottom: 80px;
 				position: relative;
 				&::before {
 					content: "";
@@ -3775,33 +3787,50 @@ body {
 				}
 				.pd-list {
 					display: flex;
-					align-items: center;
+					align-items: flex-start;
 					justify-content: space-between;
 					flex-wrap: wrap;
-					gap: 24px 0;
-					background: #fff;
+					gap: 80px 0;
 					.item {
 						width: 32.32%;
 						transition: all 0.5s;
 						z-index: 1;
+						&:first-child a .item-box:hover {
+							background: url(../images/products/img_bg_1.png) no-repeat;
+						}
+						&:nth-child(2) a .item-box:hover {
+							background: url(../images/products/img_bg_6.png) no-repeat;
+						}
+						&:nth-child(3) a .item-box:hover {
+							background: url(../images/products/img_bg_3.png) no-repeat;
+						}
+						&:nth-child(4) a .item-box:hover {
+							background: url(../images/products/img_bg_5.png) no-repeat;
+						}
+						&:nth-child(5) a .item-box:hover {
+							background: url(../images/products/img_bg_2.png) no-repeat;
+						}
+						&:nth-child(6) a .item-box:hover {
+							background: url(../images/products/img_bg_4.png) no-repeat;
+						}
 						a {
-							padding: 66.5px 0 166px;
-							cursor: pointer;
+							.item-box {
+								padding: 82px 0;
+							}
 						}
 						& + .item {
 							margin-top: 0;
 						}
 						.pd-img {
-							width: 168px;
-							margin-bottom: 35px;
+							width: 237px;
 						}
 						.txt-1 {
 							font-size: 24px;
 							line-height: 32px;
-							position: absolute;
-							bottom: 145px;
 							width: 100%;
 							white-space: nowrap;
+							text-align: center;
+							margin-top: 25px;
 						}
 						.txt-2 {
 							display: block;
@@ -3813,46 +3842,20 @@ body {
 							text-align: center;
 							width: 100%;
 							max-width: 80%;
-							position: absolute;
-							top: 372px;
-							left: 50%;
-							transform: translateX(-50%);
+							margin-top: 8px;
 						}
 						.go-btn {
-							padding: 18.5px 0;
+							padding: 17px 0;
+							font-size: 16px;
 							letter-spacing: -0.1px;
 							display: none;
 						}
 						&:hover {
 							background-size: cover;
 							background-position: center;
-							.txt-1 {
-								color: #fff;
-							}
-							.txt-2 {
-								color: #fff;
-							}
 							.go-btn {
 								display: block;
 							}
-						}
-						&:first-child:hover {
-							background: url(../images/products/img_bg_1.png) no-repeat;
-						}
-						&:nth-child(2):hover {
-							background: url(../images/products/img_bg_6.png) no-repeat;
-						}
-						&:nth-child(3):hover {
-							background: url(../images/products/img_bg_3.png) no-repeat;
-						}
-						&:nth-child(4):hover {
-							background: url(../images/products/img_bg_5.png) no-repeat;
-						}
-						&:nth-child(5):hover {
-							background: url(../images/products/img_bg_2.png) no-repeat;
-						}
-						&:nth-child(6):hover {
-							background: url(../images/products/img_bg_4.png) no-repeat;
 						}
 					}
 				}
@@ -4810,26 +4813,26 @@ body {
 /* 1200 이상 */
 @media all and (min-width: 1200px) {
 	// products
-	.sub-top-info {
-		&.products-all {
-			.inner-gap-1 {
-				.pd-list {
-					.item {
-						padding: 0;
-						a {
-							padding: 73.5px 0 159px;
-						}
-						.txt-1 {
-							bottom: 130px;
-						}
-						.txt-2 {
-							top: 391px;
-						}
-					}
-				}
-			}
-		}
-	}
+	// .sub-top-info {
+	// 	&.products-all {
+	// 		.inner-gap-1 {
+	// 			.pd-list {
+	// 				.item {
+	// 					padding: 0;
+	// 					a {
+	// 						padding: 73.5px 0 159px;
+	// 					}
+	// 					.txt-1 {
+	// 						bottom: 130px;
+	// 					}
+	// 					.txt-2 {
+	// 						top: 391px;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	// Products - detail
 	.pd-detail-top {
