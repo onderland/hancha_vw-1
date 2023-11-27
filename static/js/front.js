@@ -74,7 +74,15 @@ if (window.console == undefined) { console = { log: () => { } } }
 			// mobile menu show hide
 			menuBtn.addEventListener('click', () => {
 				menuBox.classList.toggle('is-active');
-				body.style.overflow = 'hidden';
+
+				// body scorll
+				console.log(document.querySelector('#hamburger-1').classList.contains('is-active'));
+				if (document.querySelector('#hamburger-1').classList.contains('is-active')) {
+					body.style.overflow = '';
+				} else {
+					body.style.overflow = 'hidden';
+				}
+
 				document.querySelector('.footer').classList.toggle('fixed');
 				document.querySelector('#hamburger-1').classList.toggle('is-active');
 			})
@@ -540,28 +548,28 @@ if (window.console == undefined) { console = { log: () => { } } }
 			tg: '[data-event="tabMenu"]',
 			tg2: '[data-event="tabMenu-section"]'
 		},
-		initialize: function() {
+		initialize: function () {
 			const me = this;
 
 			me._click();
 		},
-		_click: function(){
+		_click: function () {
 			const me = this,
-						tg = me.selectors.tg,
-						tg2 = me.selectors.tg2;
+				tg = me.selectors.tg,
+				tg2 = me.selectors.tg2;
 
 			const tgs = document.querySelectorAll(tg + ' li button');
 
 			document.querySelectorAll(tg + ' li').forEach(e => {
 				let item = e.classList.contains('is-active');
 
-				if( item ){
+				if (item) {
 					const current = e.getAttribute('data-tab');
 					document.querySelector('[data-section="' + current + '"]').classList.add('is-active');
 				}
 			});
 
-			for( const tg of tgs ){
+			for (const tg of tgs) {
 				tg.onclick = e => {
 					// tab button
 					document.querySelectorAll('[data-event="tabMenu"] li').forEach(item => {
@@ -571,12 +579,22 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 					// tab 내용
 					const idx = e.target.parentNode.getAttribute('data-tab');
-					
+
 					document.querySelectorAll(tg2 + ' [data-section]').forEach(e => {
 						e.classList.remove('is-active');
 					});
 
 					document.querySelector(tg2 + ' [data-section="' + idx + '"]').classList.add('is-active');
+
+					document.querySelectorAll('.tab-section .tab-item').forEach(() => {
+						e.target.classList.remove('is-active');
+					})
+
+					let idx2 = e.target.parentNode.getAttribute('data-tab');
+
+					console.log(e.target.parentNode.getAttribute('data-tab'));
+
+					document.querySelectorAll('.tab-section .tab-item')[idx2].classList.add('is-active');
 				}
 			}
 		}
@@ -598,7 +616,22 @@ if (window.console == undefined) { console = { log: () => { } } }
 		_click: () => {
 			document.querySelectorAll('.acc-wrap button.btn').forEach(e => {
 				e.addEventListener('click', e => {
+					document.querySelectorAll('.acc-wrap').forEach((e) => {
+						e.classList.remove('acc-open');
+					})
 					e.target.parentElement.classList.toggle('acc-open');
+
+					setTimeout(() => {
+						window.scrollTo({ top: document.querySelector('.box-ingredients').offsetTop });
+					}, 300)
+
+					const idx = e.target.parentElement.parentElement.getAttribute('data-section');
+
+					document.querySelectorAll('.tab-btn ul li').forEach((e) => {
+						e.classList.remove('is-active');
+					});
+
+					document.querySelectorAll('.tab-btn ul li')[idx].classList.add('is-active');
 				})
 			})
 		}
