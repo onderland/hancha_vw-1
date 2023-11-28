@@ -309,8 +309,10 @@ input {
   height: 44px;
 }
 .box-header .inner h1 a {
-  background-image: url(../images/logo/logo.svg);
+  background-image: url(../images/logo/logo_png.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   width: 165px;
   height: 105px;
   display: block;
@@ -442,6 +444,15 @@ input {
 }
 .box-menu > ul > li.no-arrow > a:after {
   display: none;
+}
+.box-menu > ul > li.is-active > a {
+  color: #BF9438;
+}
+.box-menu > ul > li.is-active:not(.no-arrow) > a {
+  color: #fff;
+}
+.box-menu > ul > li.is-active:not(.no-arrow) > ul > li.is-active > a {
+  color: #BF9438;
 }
 .box-menu > ul > li > ul {
   margin-top: 18px;
@@ -1040,7 +1051,7 @@ body {
 }
 .box-teaStory .inner-gap-1 .common-title-2 {
   font-size: 28px;
-  line-height: normal;
+  line-height: 37px;
   color: #fff;
   padding-top: 0;
   padding-bottom: 12px;
@@ -1075,11 +1086,14 @@ body {
 .box-brand .inner-gap-1 {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 53px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .box-brand .inner-gap-1 .common-title-1 {
   padding-left: 16px;
+  font-size: 28px;
+  line-height: 37px;
+  padding-bottom: 12px;
 }
 .box-brand .gap {
   margin-bottom: 31px;
@@ -1122,9 +1136,9 @@ body {
   justify-content: center;
   color: #fff;
   font-family: Playfair Display;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
   z-index: 20;
 }
 .box-brand .gap .swiper-brand .item a .text-2 {
@@ -1670,13 +1684,14 @@ body {
   width: 100%;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px 0;
 }
 .sub-top-info.products-all .inner-gap-1 .pd-list .item {
   width: 48%;
+  min-height: 242px;
   position: relative;
 }
 .sub-top-info.products-all .inner-gap-1 .pd-list .item a {
@@ -1718,7 +1733,12 @@ body {
   letter-spacing: -0.1px;
 }
 .sub-top-info.products-all .inner-gap-1 .pd-list .item .txt-2 {
-  display: none;
+  color: #4B4B4B;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 4px;
 }
 .sub-top-info.products-all .inner-gap-1 .pd-list .item .go-btn {
   display: none;
@@ -2595,19 +2615,30 @@ body {
 }
 
 .subStory .inner-gap-1 {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
 }
 .subStory .inner-gap-1::before {
   content: "";
-  width: 142px;
-  height: 160px;
-  background: url(../images/bg/mo_pattern_02.png) no-repeat;
+  width: 190px;
+  height: 153px;
+  background: url(../images/bg/teaStory_mo_pattern.png) no-repeat;
   background-size: contain !important;
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -1;
+}
+.subStory .inner-gap-1::after {
+  content: "";
+  width: 158px;
+  height: 275px;
+  background: url(../images/bg/teaStory_mo_bottom.png) no-repeat;
+  background-size: contain !important;
+  position: absolute;
+  bottom: -116px;
+  left: 0;
   z-index: -1;
 }
 .subStory .top-text {
@@ -2628,7 +2659,7 @@ body {
 .subStory .story-list {
   width: 100%;
   position: relative;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .subStory .story-list .item {
   width: 100%;
@@ -2762,19 +2793,6 @@ body {
   font-weight: 600;
   line-height: 32px;
   position: relative;
-}
-.teaStory-detail .text-2::after {
-  content: "";
-  display: block;
-  background: linear-gradient(180deg, rgba(248, 245, 238, 0.3) 50%, #f8f5ee 78.12%);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 35px;
-}
-.teaStory-detail .text-2.oneline::after {
-  display: none;
 }
 .teaStory-detail .box-contentList ul li .img {
   width: 100%;
@@ -2960,7 +2978,7 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   margin-top: 40px;
-  padding: 0 0 0 48px;
+  padding: 0 0 0 40px;
   display: block;
 }
 .btn-backList span::after {
@@ -3403,17 +3421,19 @@ body {
   .box-brand .inner-gap-1 {
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 88px;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
   .box-brand .inner-gap-1 .common-title-1 {
+    font-size: 52px;
+    line-height: 70px;
     padding-left: 0;
-    padding-bottom: 36px;
+    padding-bottom: 28px;
   }
   .box-brand .gap {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
   .box-brand .gap .swiper-brand .item a .img-holder span {
     padding-top: 116%;
@@ -3825,9 +3845,6 @@ body {
     margin-top: 60px;
     letter-spacing: 0.16px;
   }
-  .sub-top-info.products-all {
-    background: none;
-  }
   .sub-top-info.products-all::after {
     content: "";
     width: 320px;
@@ -3843,17 +3860,6 @@ body {
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
-  }
-  .sub-top-info.products-all .inner-gap-1::before {
-    content: "";
-    width: 346px;
-    height: 346px;
-    background: url(../images/bg/products_pc_pattern.png) no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    right: 10.9%;
-    z-index: -1;
   }
   .sub-top-info.products-all .inner-gap-1 .common-title-1 {
     font-size: 48px;
@@ -4417,16 +4423,31 @@ body {
   .box-contact .inner-gap-1 .right iframe {
     min-height: 500px;
   }
+  .subStory {
+    background: url(../images/bg/teaStory_pc_pattern.png) no-repeat;
+    background-position: 100% -4px;
+    position: relative;
+  }
+  .subStory::after {
+    content: "";
+    display: block;
+    width: 315px;
+    height: 560px;
+    background: url(../images/bg/teaStory_pc_bottom.png) no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -192px;
+    z-index: -1;
+  }
   .subStory .inner-gap-1 {
     padding-top: 80px;
     padding-bottom: 100px;
   }
   .subStory .inner-gap-1::before {
-    content: "";
-    width: 346px;
-    height: 264px;
-    background: url(../images/bg/story_top_bg.png) no-repeat;
-    right: 14.7%;
+    display: none;
+  }
+  .subStory .inner-gap-1::after {
+    display: none;
   }
   .subStory .top-text .txt-1 {
     font-size: 32px;
