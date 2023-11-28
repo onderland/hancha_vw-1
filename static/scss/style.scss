@@ -845,9 +845,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex: 1 0 0;
-	border: 1px solid #2d3e54;
+	border: 1px solid #1E3067;
 	background: #f8f5ee;
-	color: #2d3e54;
+	color: #1A3981;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 600;
@@ -962,7 +962,8 @@ body {
 			line-height: 42px;
 		}
 		.txt-2 {
-			color: #fff;
+			// color: #fff;
+			color: #EFEFEF;
 			font-family: Playfair Display;
 			font-size: 24px;
 			font-style: normal;
@@ -1017,7 +1018,7 @@ body {
 				opacity: 1;
 				width: 20px;
 				height: 8px;
-				background-color: #003d75;
+				background-color: #003D75;
 			}
 		}
 	}
@@ -1226,7 +1227,7 @@ body {
 							font-size: 16px;
 							font-style: normal;
 							font-weight: 500;
-							border-bottom: 2px solid #1a3981;
+							border-bottom: 2px solid #1A3981;
 							padding-bottom: 3px;
 							position: relative;
 							top: -7px;
@@ -1749,7 +1750,7 @@ body {
 					position: relative;
 					&.blue {
 						color: #fff;
-						background: #072966;
+						background: #1E3067;
 						& + .info {
 							border-top: none;
 						}
@@ -1765,7 +1766,7 @@ body {
 					font-weight: 400;
 					line-height: 20px;
 					border-radius: 0 0 8px 8px;
-					border-top: 1px solid #f1f1f1;
+					border-top: 1px solid #EFEFEF;
 				}
 			}
 			.txt-2 {
