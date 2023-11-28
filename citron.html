@@ -21,20 +21,55 @@
     <!-- inner-wrap -->
     <div class="inner-wrap">
       <!-- products Detail Top -->
-      <div class="pd-detail-top" style="background: url(static/images/products/detail_bg_3.png) no-repeat; background-position: 70%;">
+      <div class="pd-detail-top"
+        style="background: url(static/images/products/detail_bg_3.png) no-repeat; background-position: 70%;">
         <div class="inner-gap-1">
           <div class="inner">
             <div class="pd-img">
               <img src="static/images/products/img_3.png" alt="">
             </div>
             <div class="right">
-              <p class="common-title-1" id="data-title">CITRON GINGER</p>
-              <p class="txt-1">It is a tea that gives you comfort of mind and vitality with fresh citron and warm flavor ginger.</p>
-              <div class="text-box">
-                <p class="tit">Soothe With Minds</p>
-                <p class="txt">Citron Ginger tea is packed with minerals and vitamins, known for its refreshing aroma. The combination of vitamin Crich citron and immunity-boosting ginger can revitalize your body. Find renewed vitality in your mouth with the invigorating scent of citron and the robustness of ginger. Enjoy a vibrant day with a cup of Citron Ginger.</p>
-                <p class="txt">* Add one tea bag to a cup of hot water(8 oz), let steep for 3-5 minutes and enjoy.</p>
-              </div>
+              <p class="common-title-1" id="data-title">CITRON GINGER Tea</p>
+              <p class="txt-1">SUPPORTS POSITIVE MOOD*</p>
+              <ul class="tea-info">
+                <li class="item">
+                  <div class="img">
+                    <img src="static/images/img/products_icon_1.png" alt="">
+                  </div>
+                  <div class="txt">
+                    <p class="txt-1">HERBAL POWER</p>
+                    <p class="txt-2">This blend gently invigorates while providing a warm sensation</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="img">
+                    <img src="static/images/img/products_icon_2.png" alt="">
+                  </div>
+                  <div class="txt">
+                    <p class="txt-1">TASTE</p>
+                    <p class="txt-2">Tart and slightly sweet</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="img">
+                    <img src="static/images/img/products_icon_3.png" alt="">
+                  </div>
+                  <div class="txt">
+                    <p class="txt-1">PERSONALITY</p>
+                    <p class="txt-2">Joyful, convivial and bright</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="img">
+                    <img src="static/images/img/products_icon_4.png" alt="">
+                  </div>
+                  <div class="txt">
+                    <p class="txt-1">CAFFEINE LEVEL</p>
+                    <p class="txt-2">Caffeine Free</p>
+                  </div>
+                </li>
+              </ul>
+              <span class="noti-txt">* These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease</span>
             </div>
           </div>
         </div>
@@ -43,58 +78,145 @@
       <!-- products Detail Ingredients -->
       <div class="box-ingredients">
         <div class="inner-gap-1">
-          <p class="common-title-1">Ingredients</p>
-          <div class="ingredient-swiper">
-            <ul class="swiper-wrapper">
-              <li class="item swiper-slide">
-                <div class="img">
-                  <img src="static/images/img/ingredients_img_3_1.png" alt="">
-                </div>
-                <div class="text">
-                  <p class="name">Citron</p>
-                  <p class="txt">It is known for its refreshing taste and aroma and is rich in vitamin C.</p>
-                  <p class="txt">• To relax a tense body and mind.</p>
-                </div>
-              </li>
-              <li class="item swiper-slide">
-                <div class="img">
-                  <img src="static/images/img/ingredients_img_3_2.png" alt="">
-                </div>
-                <div class="text">
-                  <p class="name">Ginger</p>
-                  <p class="txt">It has a warm nature and a very spicy taste
-                    without any toxicity.</p>
-                  <p class="txt">• When the weather turns cold and dry.</p>
-                </div>
-              </li>
+          <p class="common-title-1">Peek Inside This Blend</p>
+          <div class="tab-btn" data-event="tabMenu">
+            <ul>
+              <li data-tab="1" class="is-active"><button>ingredients</button></li>
+              <li data-tab="2"><button>how to enjoy</button></li>
+              <li data-tab="3"><button>supplement facts</button></li>
             </ul>
           </div>
-          <p class="common-title-1 small">Supplement Facts</p>
-          <p class="txt-1">Serving Size 1 tea bag (Makes 8 fl oz) Servings Per Container 20</p>
-          <div class="common-table-1 scroll">
-            <table>
-              <thead>
-                <tr>
-                  <th>All Herbal Ingredients</th>
-                  <th>2,000mg</th>
-                  <th>%DV</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Citron</td>
-                  <td></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>Ginger</td>
-                  <td></td>
-                  <td>-</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="tab-section" data-event="tabMenu-section">
+            <div class="tab-item" data-section="1">
+              <div class="acc-wrap acc-open"><!-- class="acc-open" tab 강제 block -->
+                <button type="button" class="btn">ingredients</button>
+                <div class="acc-inner">
+                  <div class="ingredient-swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="item swiper-slide">
+                        <div class="img">
+                          <img src="static/images/img/ingredients_img_3_1.png" alt="">
+                        </div>
+                        <div class="text">
+                          <p class="name">Citron</p>
+                          <p class="tit">Description</p>
+                          <p class="txt">It is known for its refreshing taste and aroma and is rich in vitamin C.</p>
+                          <p class="tit">When to Use</p>
+                          <p class="txt">Recovery: To relax a tense body and mind.</p>
+                        </div>
+                      </li>
+                      <li class="item swiper-slide">
+                        <div class="img">
+                          <img src="static/images/img/ingredients_img_3_2.png" alt="">
+                        </div>
+                        <div class="text">
+                          <p class="name">Ginger</p>
+                          <p class="tit">Description</p>
+                          <p class="txt">It has a warm nature and a very spicy taste without any toxicity.</p>
+                          <p class="tit">When to Use</p>
+                          <p class="txt">Respiratory: When the weather turns cold and dry.</p>
+                          <div class="txt">Seasonal: Use when warmth is needed.</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-item" data-section="2">
+              <div class="acc-wrap">
+                <button type="button" class="btn">how to enjoy</button>
+                <div class="acc-inner">
+                  <div class="box-enjoyList">
+                    <div class="img">
+                      <div class="img-holder">
+                        <span>
+                          <img src="static/images/img/throat_1.jpg" alt="">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <h4>How to Enjoy:</h4>
+                      <ol>
+                        <li><span class="icon-1"></span>Pour 8 oz. freshly boiled water over 1 tea bag.</li>
+                        <li><span class="icon-2"></span>Cover & Steep for 3-5 min.</li>
+                        <li><span class="icon-3"></span>Squeeze tea bag to ensure maximum goodness.</li>
+                        <li><span class="icon-4"></span>Enjoy 1-3 cups per day. Especially good with honey!</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-item" data-section="3">
+              <div class="acc-wrap">
+                <button type="button" class="btn">Supplement facts</button>
+                <div class="acc-inner">
+                  <div class="box-facts">
+                    <h4>Supplemnet Facts</h4>
+                    <p class="text-1">Serving Size 1 tea bag(makes 8 fl.oz.)<br> Servings per container 16<br> *  Calories 0</p>
+                    <div class="common-table-1 scroll">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Title</th>
+                            <th>Amount per serving</th>
+                            <th>%Daily Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>All Herbal Ingredients</td>
+                            <td></td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>proprietary blend</td>
+                            <td>1750mg</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>organic eucalyptus leaf[phEur]</td>
+                            <td></td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>organic Licorice root</td>
+                            <td></td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>organic spearmint leaf</td>
+                            <td></td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>organic marshmallow root[phEur]</td>
+                            <td></td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>organic slippery elm bark[USP]</td>
+                            <td></td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>organic licorice root dry aqueous<br>extract 6:1</td>
+                            <td></td>
+                            <td>-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="text-2">* ’-’ Daily Value (DV) not established.</p>
+                    <p class="text-3">
+                      <strong>Warnings : Consult your</strong><br class="mo-show"> <strong>healthcare practitioner</strong> prior to use if you have low potassium levels; <br class="pc-show">if you are taking diuretics, coticosteroids, cardiac glycosides such as digoxin, potassium depleting medications or if you are pregnant or breastfeeding. <strong>Do not use this product</strong> if you have high blood pressure, heart disease, or impaired kidney or liver function; or if you are allergic to any of tis ingredients. <strong>Not recommended for use with children under 12 years of age.</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="notice">’-’ Daily Value (DV) not established.</p>
         </div>
       </div>
       <!-- //products Detail Ingredients -->
@@ -109,7 +231,7 @@
                   <div class="img">
                     <img src="static/images/products/img_2.png" alt="">
                   </div>
-                  <p class="name">OMIJA TEA</p>
+                  <p class="name">omija tea</p>
                   <p class="info">Schisandra Berry, Stevia Leaf</p>
                 </a>
               </li>
@@ -118,7 +240,7 @@
                   <div class="img">
                     <img src="static/images/products/img_4.png" alt="">
                   </div>
-                  <p class="name">QUINCE TEA</p>
+                  <p class="name">quince tea</p>
                   <p class="info">Quince, Stevia Leaf</p>
                 </a>
               </li>
@@ -157,8 +279,14 @@
     menuSelectKey({
       depth: "2"
     })
-    subIngredientsSw.initialize();
     subRecommendSw.initialize();
+    tabMenu.initialize();
+    accShow.initialize();
+    /**
+     * tabMenu.initialize(); < display none block js 사용 하고 싶으면,
+     * subIngredientsSw.initialize(); < 맨 마지막에 호출 해야 함.
+    */
+    subIngredientsSw.initialize();
   </script>
 
 </body>

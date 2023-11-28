@@ -408,7 +408,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 				breakpoints: {
 					1024: {  //브라우저가 1024보다 클 때
 						slidesPerView: 5,
-						spaceBetween: 24,
+						spaceBetween: 0,
 						centeredSlides: false,
 					},
 					780: {  //브라우저가 780보다 클 때
@@ -594,7 +594,8 @@ if (window.console == undefined) { console = { log: () => { } } }
 
 					console.log(e.target.parentNode.getAttribute('data-tab'));
 
-					document.querySelectorAll('.tab-section .tab-item')[idx2].classList.add('is-active');
+					// document.querySelectorAll('.tab-section .tab-item')[idx2].classList.add('is-active');
+					document.querySelectorAll('.tab-section .tab-item').classList.add('is-active');
 				}
 			}
 		}
