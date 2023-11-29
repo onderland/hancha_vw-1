@@ -2061,6 +2061,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 2px solid #8E6A4E;
+  margin: 0 auto;
 }
 .box-ingredients .inner-gap-1 .ingredient-swiper .item .img img {
   width: 149px;
