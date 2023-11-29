@@ -420,7 +420,7 @@ input {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 26px;
   text-transform: uppercase;
   font-style: normal;
   display: flex;
@@ -467,7 +467,7 @@ input {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px;
   height: 20px;
   display: flex;
   align-items: center;
@@ -2601,7 +2601,6 @@ body {
   font-weight: 700;
   line-height: 24px;
   margin-right: 8px;
-  font-family: open sans-serif;
 }
 .box-contact .inner-gap-1 .left .info li + li {
   margin-left: 9px;
