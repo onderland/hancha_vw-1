@@ -1075,7 +1075,7 @@ body {
   letter-spacing: 0.2px;
 }
 .box-teaStory .inner-gap-1 .common-btn-2 {
-  margin-top: 32px;
+  margin-top: 34px;
 }
 
 .box-brand {
@@ -1169,7 +1169,7 @@ body {
   border-bottom: 2px solid #1A3981;
   padding-bottom: 3px;
   position: relative;
-  top: -7px;
+  top: -5px;
 }
 .box-brand .gap .swiper-brand .item a:hover .img-holder span::after {
   opacity: 1;
@@ -1385,6 +1385,17 @@ body {
   background: url(../images/bg/mobile_pattern_01.png) no-repeat;
   background-position: 100% 0;
 }
+.sub-top-info::after {
+  content: "";
+  display: block;
+  background: url(../images/bg/products_mo_pattern.png) no-repeat;
+  width: 156px;
+  height: 183px;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 .sub-top-info .inner-gap-1 {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1393,7 +1404,7 @@ body {
   margin-bottom: 40px;
 }
 .sub-top-info .inner-gap-1 .common-title-1 {
-  padding-bottom: 29px;
+  padding-bottom: 25px;
   position: relative;
 }
 .sub-top-info .inner-gap-1 .common-title-1::after {
@@ -1421,8 +1432,8 @@ body {
   width: 100%;
   position: relative;
   background: #f8f5ee url(../images/bg/ourstory_bg_mob.png) no-repeat;
-  background-size: 100%;
-  background-position: center 100%;
+  background-size: 360px;
+  background-position: 100% 101.5%;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
@@ -1471,7 +1482,7 @@ body {
 .sub-top-info.brandStory .top-img {
   width: 100%;
   height: 248px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   margin-left: 0;
 }
 .sub-top-info.brandStory .top-img img {
@@ -1483,11 +1494,11 @@ body {
 }
 
 .sub-bg-info.vision .inner-gap-1 {
-  padding-top: 54px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .sub-bg-info.vision .inner-gap-1 .common-title-1 {
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 .sub-bg-info.vision .vision-swiper {
   width: calc(100% + 32px);
@@ -2330,6 +2341,7 @@ body {
   background-image: url(../images/bg/mo_pattern_02.png);
   background-size: 142px 159px;
   position: relative;
+  overflow: hidden;
 }
 .sub-top-info.ourQuality::before {
   content: "";
@@ -2339,15 +2351,15 @@ body {
   width: 177px;
   height: 201px;
   position: absolute;
-  bottom: 0;
+  bottom: -28px;
   left: 0;
 }
 .sub-top-info.ourQuality .top-img {
   margin-left: 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 .sub-top-info.ourQuality .text-box .common-title-1 {
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 .sub-top-info.ourQuality .text-box .common-title-1::after {
   display: none;
@@ -2373,7 +2385,7 @@ body {
   overflow: hidden;
 }
 .box-ourFormu .inner-gap-1 {
-  padding-top: 55px;
+  padding-top: 50px;
   padding-bottom: 6px;
 }
 .box-ourFormu .inner-gap-1 .img-1 {
@@ -2384,7 +2396,7 @@ body {
   margin-bottom: 58px;
 }
 .box-ourFormu .inner-gap-1 .common-title-1 {
-  padding-bottom: 16px;
+  padding-bottom: 11px;
 }
 .box-ourFormu .inner-gap-1 .common-title-5 {
   padding: 4px 0 49px 0;
@@ -2406,7 +2418,7 @@ body {
 }
 
 .box-process .inner-gap-1 {
-  padding-top: 55px;
+  padding-top: 50px;
   padding-bottom: 0;
 }
 .box-process .inner-gap-1 .common-title-1 {
@@ -2414,7 +2426,7 @@ body {
   padding-bottom: 19px;
 }
 .box-process .inner-gap-1 .common-title-7 {
-  padding: 0 10px 40px 10px;
+  padding: 0 10px 38px 10px;
 }
 .box-process .inner-gap-1 .flex .img img {
   width: 100%;
@@ -2535,7 +2547,7 @@ body {
   width: 189px;
   height: 328px;
   position: absolute;
-  bottom: -170px;
+  bottom: -176px;
   left: 0;
   z-index: -1;
 }
@@ -2552,9 +2564,9 @@ body {
 }
 .box-contact .inner-gap-1 .left .common-title-1 {
   color: #000;
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: normal;
+  line-height: 54px;
   padding-bottom: 16px;
 }
 .box-contact .inner-gap-1 .left .txt-1 {
@@ -2850,7 +2862,7 @@ body {
   display: block;
 }
 .teaStory-detail .box-infoText {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .teaStory-detail .box-infoText .inner-gap-1 {
   padding: 27px 16px;
@@ -2989,19 +3001,19 @@ body {
   font-weight: 600;
   line-height: 24px;
   text-transform: uppercase;
-  margin-top: 40px;
-  padding: 0 0 0 40px;
+  margin-top: 38px;
+  padding: 0 0 0 36px;
   display: block;
 }
 .btn-backList span::after {
   content: "";
   display: block;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z' fill='%23171010'/%3E%3C/svg%3E");
-  width: 24px;
-  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10' fill='none'%3E%3Cg clip-path='url(%23clip0_2203_20504)'%3E%3Cpath d='M4.90247 1.27588L0.773437 5.00002L4.90247 8.72416' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.225 5L0.773438 5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2203_20504'%3E%3Crect width='16' height='9' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  width: 16px;
+  height: 9px;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 4px;
   transform: translateY(-50%);
 }
 
@@ -3670,9 +3682,9 @@ body {
     margin-top: 16px;
   }
   .sub-bg-info {
-    background: #f8f5ee url(../images/bg/pc_pattern_03.png) no-repeat;
-    background-size: contain;
-    background-position: 0 100%;
+    background: #f8f5ee url(../images/bg/story_pc_pattern.png) no-repeat;
+    background-size: 299px;
+    background-position: 100% 100%;
   }
   .sub-bg-info .inner-gap-1 {
     padding-top: 100px;
@@ -3874,7 +3886,7 @@ body {
     background-size: contain;
     bottom: 0;
     position: absolute;
-    left: 0px;
+    left: -18px;
     z-index: -1;
   }
   .sub-top-info.products-all .inner-gap-1 {
@@ -3900,22 +3912,22 @@ body {
     transition: all 0.5s;
     z-index: 1;
   }
-  .sub-top-info.products-all .inner-gap-1 .pd-list .item:first-child a .item-box:hover {
+  .sub-top-info.products-all .inner-gap-1 .pd-list .item:first-child:hover .item-box {
     background: url(../images/products/img_bg_1.png) no-repeat;
   }
-  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(2) a .item-box:hover {
+  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(2):hover .item-box {
     background: url(../images/products/img_bg_6.png) no-repeat;
   }
-  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(3) a .item-box:hover {
+  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(3):hover .item-box {
     background: url(../images/products/img_bg_3.png) no-repeat;
   }
-  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(4) a .item-box:hover {
+  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(4):hover .item-box {
     background: url(../images/products/img_bg_5.png) no-repeat;
   }
-  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(5) a .item-box:hover {
+  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(5):hover .item-box {
     background: url(../images/products/img_bg_2.png) no-repeat;
   }
-  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(6) a .item-box:hover {
+  .sub-top-info.products-all .inner-gap-1 .pd-list .item:nth-child(6):hover .item-box {
     background: url(../images/products/img_bg_4.png) no-repeat;
   }
   .sub-top-info.products-all .inner-gap-1 .pd-list .item a .item-box {
@@ -3954,16 +3966,22 @@ body {
     display: none;
   }
   .sub-top-info.products-all .inner-gap-1 .pd-list .item:hover {
-    background-size: cover;
-    background-position: center;
+    background-size: cover !important;
+    background-position: center !important;
   }
-  .sub-top-info.products-all .inner-gap-1 .pd-list .item:hover .go-btn {
+  .sub-top-info.products-all .inner-gap-1 .pd-list .item:hover:hover .go-btn {
     display: block;
   }
   .sub-top-info.ourQuality {
     background-image: url(../images/bg/pc_pattern_05.png);
     background-size: 346px;
     background-position: 64vw 0;
+  }
+  .sub-top-info.ourQuality::before {
+    bottom: -5px;
+  }
+  .sub-top-info.ourQuality::after {
+    display: none;
   }
   .sub-top-info.ourQuality .inner-gap-1 {
     padding-left: 80px;
@@ -3993,7 +4011,7 @@ body {
     height: fit-content !important;
   }
   .sub-top-info.ourQuality .text-box div:first-child {
-    flex: 0 0 52%;
+    flex: 0 0 52.5%;
   }
   .sub-top-info.ourQuality .text-box .common-title-5 {
     font-size: 40px;
@@ -4009,6 +4027,10 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     letter-spacing: 0.01em;
+    display: inline;
+  }
+  .sub-top-info.ourQuality .text-box .txt-1 + .txt-1 {
+    margin-top: 0;
   }
   .box-ourFormu .inner-gap-1 {
     padding-top: 115px;
@@ -4019,7 +4041,7 @@ body {
     flex-direction: row;
   }
   .box-ourFormu .inner-gap-1 .flex .gap-1 {
-    flex: 0 0 29vw;
+    flex: 0 0 34.8vw;
   }
   .box-ourFormu .inner-gap-1 .flex .gap-1 .sign {
     width: 44px;
@@ -4051,13 +4073,14 @@ body {
   }
   .box-ourFormu .inner-gap-1 .common-title-1 {
     padding-bottom: 42px;
+    width: 43%;
   }
   .box-ourFormu .inner-gap-1 .common-title-5 {
     line-height: 53px;
     font-size: 40px;
     position: relative;
-    padding-bottom: 35px;
-    margin-bottom: 12px;
+    padding-bottom: 45px;
+    margin-bottom: 0;
     letter-spacing: 0em;
   }
   .box-ourFormu .inner-gap-1 .common-title-5::after {
@@ -4066,7 +4089,7 @@ body {
   .box-ourFormu .inner-gap-1 .common-title-6 {
     font-size: 18px;
     line-height: 26px;
-    padding-bottom: 42px;
+    padding-bottom: 39px;
   }
   .box-process .inner-gap-1 {
     padding-top: 87px;
@@ -4496,8 +4519,8 @@ body {
   }
   .box-contact .inner-gap-1 .left .common-title-1 {
     font-size: 58px;
-    padding-top: 54px;
-    padding-bottom: 24px;
+    padding-top: 64px;
+    padding-bottom: 35px;
   }
   .box-contact .inner-gap-1 .left .txt-1 {
     font-size: 24px;
@@ -4854,6 +4877,9 @@ body {
   .teaStory-detail .box-cere .flex .right .text-1 + .text-1 {
     padding-top: 27px !important;
   }
+  .btn-backList span {
+    padding: 0 0 0 48px;
+  }
 }
 /* //1024 이상 */
 /* 1024 이상 1400 이하 */
@@ -4948,7 +4974,7 @@ body {
 /* 1500 이상 */
 @media all and (min-width: 1500px) {
   .box-brand .gap .swiper-brand .item a .text-2 {
-    height: 184px;
+    height: 187px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
