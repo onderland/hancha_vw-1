@@ -31,6 +31,12 @@ const menuSelectKey = (item) => {
   setTimeout(() => {
     document.querySelector('[data-include="header"] [data-page="' + key + '"]').classList.add('is-active')
   }, 100)
+
+  setTimeout(() => {
+    document.querySelectorAll('.box-header .box-menu ul li ul li').forEach((e) => {
+      e.classList.contains('is-active') ? e.parentElement.parentElement.classList.add('is-active') : console.log(2);
+    })
+  }, 500)
 }
 
 // pageMainLink
