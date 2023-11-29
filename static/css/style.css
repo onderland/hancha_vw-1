@@ -2029,6 +2029,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.box-ingredients .inner-gap-1 .ingredient-swiper .item.mo-show {
+  display: block;
+}
 .box-ingredients .inner-gap-1 .ingredient-swiper .item.swiper-slide-active .text {
   display: block;
   margin-left: -4.5vw;
@@ -4321,6 +4324,9 @@ body {
     padding: 30px 40px;
     flex-direction: row;
     gap: 0 40px;
+  }
+  .box-ingredients .inner-gap-1 .ingredient-swiper .item.mo-show {
+    display: none !important;
   }
   .box-ingredients .inner-gap-1 .ingredient-swiper .item .text {
     display: block;

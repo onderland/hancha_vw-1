@@ -2170,6 +2170,9 @@ body {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				&.mo-show{
+					display: block;
+				}
 				&.swiper-slide-active {
 					.text {
 						display: block;
@@ -4675,6 +4678,9 @@ body {
 					padding: 30px 40px;
 					flex-direction: row;
 					gap: 0 40px;
+					&.mo-show{
+						display: none !important;
+					}
 					.text {
 						display: block;
 						width: 100%;
