@@ -420,7 +420,7 @@ input {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
-  line-height: 26px;
+  line-height: 22px;
   text-transform: uppercase;
   font-style: normal;
   display: flex;
@@ -467,7 +467,7 @@ input {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
   height: 20px;
   display: flex;
   align-items: center;
@@ -2601,6 +2601,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   margin-right: 8px;
+  font-family: open sans-serif;
 }
 .box-contact .inner-gap-1 .left .info li + li {
   margin-left: 9px;
@@ -3300,9 +3301,9 @@ body {
   .box-menu > ul > li > ul {
     width: calc(100% + 40px);
     display: block;
-    padding: 70px 30px 30px;
+    padding: 60px 30px 30px;
     border-radius: 0px 0px 16px 16px;
-    background: linear-gradient(to bottom, transparent 24%, rgb(23, 46, 98) 20%);
+    background: linear-gradient(to bottom, transparent 10%, rgb(23, 46, 98) 20%);
     box-shadow: 10px 0px 10px 0px rgba(23, 46, 98, 0.2);
     position: absolute;
     left: 50%;
