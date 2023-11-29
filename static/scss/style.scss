@@ -2515,6 +2515,9 @@ body {
 			bottom: -28px;
 			left: 0;
 		}
+		&::after {
+			display: none;
+		}
 		.flex {
 		}
 		.top-img {
