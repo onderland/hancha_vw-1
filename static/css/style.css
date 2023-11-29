@@ -2353,6 +2353,9 @@ body {
   bottom: -28px;
   left: 0;
 }
+.sub-top-info.ourQuality::after {
+  display: none;
+}
 .sub-top-info.ourQuality .top-img {
   margin-left: 0;
   margin-bottom: 20px;
