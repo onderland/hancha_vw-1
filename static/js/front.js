@@ -198,9 +198,9 @@ if (window.console == undefined) { console = { log: () => { } } }
 				fadeEffect: {
 					crossFade: false
 				},
-				// autoplay: {
-				// 	delay: 5000,
-				// },
+				autoplay: {
+					delay: 5000,
+				},
 				pagination: {
 					el: '.main-top-kv .swiper-pagination',
 					clickable: true,
