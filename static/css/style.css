@@ -2441,6 +2441,11 @@ body {
   padding-bottom: 16px;
 }
 
+.box-process {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 .box-process .inner-gap-1 {
   padding-top: 50px;
   padding-bottom: 0;
