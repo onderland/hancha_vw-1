@@ -2441,6 +2441,11 @@ body {
   padding-bottom: 16px;
 }
 
+.box-process {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 .box-process .inner-gap-1 {
   padding-top: 50px;
   padding-bottom: 0;
@@ -2891,10 +2896,14 @@ body {
 .teaStory-detail .box-infoText .inner-gap-1 {
   padding: 27px 16px;
   min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .teaStory-detail .box-infoText .inner-gap-1 .text {
   letter-spacing: 0.1px;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
 }
 .teaStory-detail .box-infoText.open .inner-gap-1 .text {
   -webkit-line-clamp: initial;
@@ -3062,15 +3071,17 @@ body {
   .teaStory-detail .top-intro .img {
     height: 400px;
   }
+  .teaStory-detail .box-contentList ul li .img {
+    height: 400px;
+  }
   .teaStory-detail .storyImg-swiper .item {
     height: 400px;
   }
   .teaStory-detail .box-infoText .inner-gap-1 {
     min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  }
+  .teaStory-detail .box-infoText .inner-gap-1 .text {
+    -webkit-line-clamp: 2;
   }
   .subStory .story-list .item .inner .img {
     height: 260px;
