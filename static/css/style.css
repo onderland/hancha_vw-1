@@ -1443,11 +1443,19 @@ body {
 .sub-bg-info {
   width: 100%;
   position: relative;
-  background: #f8f5ee url(../images/bg/ourstory_bg_mob.png) no-repeat;
-  background-size: 360px;
-  background-position: 100% 101.5%;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  background: #f8f5ee;
+  overflow: hidden;
+}
+.sub-bg-info::after {
+  content: "";
+  width: 632px;
+  height: 410px;
+  background: url(../images/bg/ourstory_bg_mob.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  bottom: -180px;
 }
 .sub-bg-info .inner-gap-1 {
   padding-top: 60px;
@@ -3736,6 +3744,9 @@ body {
     background: #f8f5ee url(../images/bg/story_pc_pattern.png) no-repeat;
     background-size: 299px;
     background-position: 100% 100%;
+  }
+  .sub-bg-info::after {
+    display: none;
   }
   .sub-bg-info .inner-gap-1 {
     padding-top: 100px;
