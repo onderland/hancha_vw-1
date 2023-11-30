@@ -85,10 +85,6 @@ if (window.console == undefined) { console = { log: () => { } } }
 				document.querySelector('.footer').classList.toggle('fixed');
 				document.querySelector('#hamburger-1').classList.toggle('is-active');
 			})
-			// menuBox.querySelector('.btn-close').addEventListener('click', () => {
-			// 	menuBox.classList.remove('is-active')
-			// 	body.style.overflow = '';
-			// })
 
 			// mobile 1뎁스 click
 			for (const item of items) {
@@ -116,11 +112,6 @@ if (window.console == undefined) { console = { log: () => { } } }
 						let windowTop = window.scrollY;
 
 						if (windowTop > 152) {
-							// self.direction == -1 ? (
-							// 	showNav.play()
-							// ) : (
-							// 	showNav.reverse()
-							// );
 
 							if (document.querySelector('.mobile .box-menu.is-active')) {
 								self.direction === -1 ? (
