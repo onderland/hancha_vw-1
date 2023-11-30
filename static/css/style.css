@@ -297,6 +297,13 @@ input {
   top: 0;
   left: 0;
   right: 0;
+  transition: opacity 0.5s;
+}
+.box-header.scroll-down {
+  opacity: 0;
+}
+.box-header.scroll-up {
+  opacity: 1;
 }
 .box-header .inner {
   position: relative;

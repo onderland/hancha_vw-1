@@ -34,7 +34,7 @@ const menuSelectKey = (item) => {
 
   setTimeout(() => {
     document.querySelectorAll('.box-header .box-menu ul li ul li').forEach((e) => {
-      e.classList.contains('is-active') ? e.parentElement.parentElement.classList.add('is-active') : console.log(2);
+      e.classList.contains('is-active') ? e.parentElement.parentElement.classList.add('is-active') : false;
     })
   }, 500)
 }

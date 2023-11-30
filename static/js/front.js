@@ -102,8 +102,8 @@ if (window.console == undefined) { console = { log: () => { } } }
 		_scroll: () => {
 			const showNav = gsap.from('[data-include="header"] .box-header', {
 				//yPercent: -200,
-				"opacity": "0",
-				"display": "none",
+				//"opacity": "0",
+				//"display": "none",
 				paused: true,
 				duration: 0.2
 			}).progress(1);
@@ -116,11 +116,11 @@ if (window.console == undefined) { console = { log: () => { } } }
 						let windowTop = window.scrollY;
 
 						if (windowTop > 152) {
-							self.direction === -1 ? (
-								showNav.play()
-							) : (
-								showNav.reverse()
-							);
+							// self.direction == -1 ? (
+							// 	showNav.play()
+							// ) : (
+							// 	showNav.reverse()
+							// );
 
 							if (document.querySelector('.mobile .box-menu.is-active')) {
 								self.direction === -1 ? (
@@ -133,6 +133,34 @@ if (window.console == undefined) { console = { log: () => { } } }
 					}
 				}
 			});
+
+			// header scroll event opacity
+			document.querySelector('.box-header').classList.add('scroll-up');
+
+			let lastScrollY = 0;
+
+			addEventListener("scroll", e => {
+				const scrollY = window.scrollY;
+
+				// 이전의 스크롤 위치와 비교하기
+				const direction = scrollY > lastScrollY ? "Scroll Down" : "Scroll Up";
+
+				// 현재의 스크롤 값을 저장
+				lastScrollY = scrollY;
+
+				let windowTop = window.scrollY;
+
+				if (windowTop > 152) {
+					if (direction == 'Scroll Up') {
+						document.querySelector('.box-header').classList.remove('scroll-down');
+						document.querySelector('.box-header').classList.add('scroll-up');
+					} else {
+						document.querySelector('.box-header').classList.add('scroll-down');
+						document.querySelector('.box-header').classList.remove('scroll-up');
+					}
+				}
+			});
+			// //header scroll event opacity
 		}
 	};
 
