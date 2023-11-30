@@ -288,7 +288,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 						centeredSlides: true,
 					},
 					600: {  //브라우저가 600보다 클 때
-						slidesPerView: 1.9,
+						slidesPerView: 2.8,
 						centeredSlides: true,
 					},
 					490: {  //브라우저가 490보다 클 때
