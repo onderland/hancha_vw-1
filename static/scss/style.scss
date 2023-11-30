@@ -1113,8 +1113,8 @@ body {
 		justify-content: flex-start;
 		// padding-top: 40px;
 		// padding-bottom: 40px;
-		padding-top: 48px;
-		padding-bottom: 48px;
+		padding-top: 13vw;
+		padding-bottom: 13vw;
 		.common-title-2 {
 			font-size: 28px;
 			line-height: 37px;
@@ -2897,7 +2897,6 @@ body {
 				display: flex;
 				flex-direction: column;
 				-webkit-tap-highlight-color: transparent;
-				cursor: auto;
 				.txt {
 					width: 100%;
 					position: relative;
@@ -3251,13 +3250,13 @@ body {
 
 /* 768 이상 */
 @media all and (min-width: 768px) {
-	.box-teaStory {
-		.inner-gap-1 {
-			.txt-1 {
-				display: block;
-			}
-		}
-	}
+	// .box-teaStory {
+	// 	.inner-gap-1 {
+	// 		.txt-1 {
+	// 			display: block;
+	// 		}
+	// 	}
+	// }
 
 	.subStory {
 		.story-list {
@@ -4645,6 +4644,7 @@ body {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+				gap: 0 40px;
 				.pd-img {
 					width: 333px;
 					height: auto;
