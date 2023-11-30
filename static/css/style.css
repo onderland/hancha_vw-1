@@ -1416,6 +1416,7 @@ body {
 }
 .sub-top-info .inner-gap-1 .common-title-1 {
   padding-bottom: 25px;
+  line-height: 40px;
   position: relative;
 }
 .sub-top-info .inner-gap-1 .common-title-1::after {
@@ -3948,9 +3949,9 @@ body {
     position: relative;
   }
   .sub-top-info.products-all .inner-gap-1 .common-title-1 {
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 500;
-    line-height: 56px;
+    line-height: 70px;
     padding-bottom: 40px;
   }
   .sub-top-info.products-all .inner-gap-1 .pd-list {
