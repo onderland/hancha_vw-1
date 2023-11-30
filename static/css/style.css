@@ -1058,6 +1058,9 @@ body {
   margin-bottom: 0;
   font-weight: 500;
 }
+.box-teaStory .inner-gap-1 .common-title-2::after {
+  display: none;
+}
 .box-teaStory .inner-gap-1 .txt-1 {
   color: #EFEFEF;
   text-align: center;
@@ -3020,6 +3023,44 @@ body {
   transform: translateY(-50%);
 }
 
+/* 768 이상 */
+@media all and (min-width: 768px) {
+  .box-teaStory .inner-gap-1 .txt-1 {
+    display: block;
+  }
+  .subStory .story-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 28px 0;
+  }
+  .subStory .story-list .item {
+    width: 48.5%;
+  }
+  .subStory .story-list .item + .item {
+    margin-top: 0;
+  }
+  .subStory .story-list .item .inner .txt {
+    min-height: 137px;
+  }
+  .teaStory-detail .top-intro .img {
+    height: 400px;
+  }
+  .teaStory-detail .storyImg-swiper .item {
+    height: 400px;
+  }
+  .teaStory-detail .box-infoText .inner-gap-1 {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .subStory .story-list .item .inner .img {
+    height: 260px;
+  }
+}
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
   body {
@@ -3722,6 +3763,9 @@ body {
   .sub-bg-info .inner-gap-1 .txt-1 + .txt-1 {
     margin-top: 16px;
   }
+  .sub-top-info.brandStory::after {
+    display: none;
+  }
   .sub-top-info.brandStory .inner-gap-1 {
     padding-left: 0;
     padding-right: 0;
@@ -3804,7 +3848,7 @@ body {
     display: block;
     width: 1px;
     height: 40px;
-    background: #072966;
+    background: #000;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
