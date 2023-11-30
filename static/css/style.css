@@ -1404,6 +1404,9 @@ body {
   left: 0;
   bottom: 0;
 }
+.sub-top-info.not-after-bg::after {
+  display: none;
+}
 .sub-top-info .inner-gap-1 {
   padding-top: 50px;
   padding-bottom: 50px;

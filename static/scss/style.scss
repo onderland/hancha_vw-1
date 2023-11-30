@@ -1504,6 +1504,11 @@ body {
 		left: 0;
 		bottom: 0;
 	}
+	&.not-after-bg{
+		&::after{
+			display: none;
+		}
+	}
 	.inner-gap-1 {
 		// padding-top: 60px;
 		// padding-bottom: 60px;
