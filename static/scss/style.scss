@@ -5654,7 +5654,7 @@ body {
 	.mobile {
 		.footer {
 			&.fixed {
-				display: none;
+				display: none !important;
 			}
 		}
 	}

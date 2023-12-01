@@ -5094,7 +5094,7 @@ body {
 /* 모바일 가로모드 일 경우 */
 @media (orientation: landscape) {
   .mobile .footer.fixed {
-    display: none;
+    display: none !important;
   }
 }
 /* //모바일 가로모드 일 경우 *//*# sourceMappingURL=style.css.map */
