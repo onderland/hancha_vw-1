@@ -3338,7 +3338,7 @@ body {
 @media all and (min-width: 1024px) {
 	// 공통 GUIDE
 	body {
-		padding-top: 152px;
+		padding-top: 92px;
 	}
 	.inner-wrap {
 	}
@@ -3547,153 +3547,6 @@ body {
 		height: 52px;
 		letter-spacing: -0.01em;
 		max-width: 240px;
-	}
-
-	// 공통 header
-	.box-header {
-		padding-top: 78px;
-		.inner {
-			h1 {
-				height: 74px;
-				a {
-					position: absolute;
-					width: 290px;
-					height: 183px;
-					top: -78px;
-					left: 50%;
-					transform: translateX(-50%);
-					background-size: cover;
-					z-index: 1100;
-				}
-			}
-			.btn-menu {
-				display: none;
-			}
-		}
-	}
-
-	// 공통 menu
-	.box-menu {
-		position: absolute;
-		top: 77px;
-		left: auto;
-		right: auto;
-		height: 74px;
-		background: transparent;
-		opacity: 1;
-		z-index: 1000;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		pointer-events: auto;
-		h1 {
-			display: none;
-		}
-		.btn-close {
-			display: none;
-		}
-		> ul {
-			padding: 0;
-			border-top: none;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 74px;
-			> li {
-				margin-top: 0;
-				width: 120px;
-				height: 100%;
-				margin: 0 60px;
-				position: relative;
-				display: flex;
-				align-items: center;
-				&:first-child {
-					margin-top: 0;
-					margin-left: 0;
-				}
-				&:nth-child(2) {
-					margin-right: 246px;
-				}
-				&:nth-child(3) {
-					margin-left: 246px;
-				}
-				&:last-child {
-					margin-right: 0;
-				}
-				> a {
-					width: 100%;
-					text-align: center;
-					display: block;
-					color: #fff;
-					font-size: 20px;
-					font-weight: 600;
-					line-height: normal;
-					height: auto;
-					cursor: pointer;
-					&:after {
-						display: none;
-					}
-				}
-				&.is-active {
-					> a {
-						color: #bf9438;
-					}
-					> ul {
-						display: none;
-					}
-					&:not(.no-arrow) {
-						> a {
-							color: #bf9438;
-						}
-					}
-				}
-				> ul {
-					width: calc(100% + 40px);
-					display: block;
-					padding: 60px 30px 30px;
-					border-radius: 0px 0px 16px 16px;
-					background: linear-gradient(to bottom, transparent 10%, rgba(23, 46, 98, 1) 20%);
-					box-shadow: 10px 0px 10px 0px rgba(23, 46, 98, 0.2);
-					position: absolute;
-					left: 50%;
-					transform: translateX(-50%);
-					top: 45px;
-					margin: 0;
-					z-index: 999;
-					display: none;
-					> li {
-						width: 100%;
-						margin-bottom: 0;
-						& + li {
-							margin-top: 16px;
-						}
-						a {
-							width: 100%;
-							color: #EFEFEF;
-							font-family: Open Sans;
-							font-size: 16px;
-							font-weight: 600;
-							line-height: 24px;
-							height: auto;
-						}
-						&:hover {
-							a {
-								color: #bf9438;
-							}
-						}
-					}
-					&:hover {
-						display: block;
-					}
-				}
-				&:first-child:hover {
-					> ul {
-						display: block;
-					}
-				}
-			}
-		}
 	}
 
 	// 공통 footer
@@ -5445,8 +5298,163 @@ body {
 }
 /* //1024 이상 */
 
-/* 1024 이상 1400 이하 */
-@media all and (min-width: 1024px) and (max-width: 1400px) {
+/* 1025이상 (1025px 사이즈부터 pc 헤더 노출) */
+@media all and (min-width: 1025px) {
+	body {
+		padding-top: 152px;
+	}
+
+	// 공통 header
+	.box-header {
+		padding-top: 78px;
+		.inner {
+			h1 {
+				height: 74px;
+				a {
+					position: absolute;
+					width: 290px;
+					height: 183px;
+					top: -78px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-size: cover;
+					z-index: 1100;
+				}
+			}
+			.btn-menu {
+				display: none;
+			}
+		}
+	}
+
+	// 공통 menu
+	.box-menu {
+		position: absolute;
+		top: 77px;
+		left: auto;
+		right: auto;
+		height: 74px;
+		background: transparent;
+		opacity: 1;
+		z-index: 1000;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		pointer-events: auto;
+		h1 {
+			display: none;
+		}
+		.btn-close {
+			display: none;
+		}
+		> ul {
+			padding: 0;
+			border-top: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 74px;
+			> li {
+				margin-top: 0;
+				width: 120px;
+				height: 100%;
+				margin: 0 60px;
+				position: relative;
+				display: flex;
+				align-items: center;
+				&:first-child {
+					margin-top: 0;
+					margin-left: 0;
+				}
+				&:nth-child(2) {
+					margin-right: 246px;
+				}
+				&:nth-child(3) {
+					margin-left: 246px;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+				> a {
+					width: 100%;
+					text-align: center;
+					display: block;
+					color: #fff;
+					font-size: 20px;
+					font-weight: 600;
+					line-height: normal;
+					height: auto;
+					cursor: pointer;
+					&:after {
+						display: none;
+					}
+				}
+				&.is-active {
+					> a {
+						color: #bf9438;
+					}
+					> ul {
+						display: none;
+					}
+					&:not(.no-arrow) {
+						> a {
+							color: #bf9438;
+						}
+					}
+				}
+				> ul {
+					width: calc(100% + 40px);
+					display: block;
+					padding: 60px 30px 30px;
+					border-radius: 0px 0px 16px 16px;
+					background: linear-gradient(to bottom, transparent 10%, rgba(23, 46, 98, 1) 15%);
+					box-shadow: 10px 0px 10px 0px rgba(23, 46, 98, 0.2);
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					top: 45px;
+					margin: 0;
+					z-index: 999;
+					display: none;
+					> li {
+						width: 100%;
+						margin-bottom: 0;
+						& + li {
+							margin-top: 16px;
+						}
+						a {
+							width: 100%;
+							color: #EFEFEF;
+							font-family: Open Sans;
+							font-size: 16px;
+							font-weight: 600;
+							line-height: 24px;
+							height: auto;
+						}
+						&:hover {
+							a {
+								color: #bf9438;
+							}
+						}
+					}
+					&:hover {
+						display: block;
+					}
+				}
+				&:first-child:hover {
+					> ul {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+/* 1025이상 (1025px 사이즈부터 pc 헤더 노출) */
+
+/* 1025 이상 1400 이하 */
+@media all and (min-width: 1025px) and (max-width: 1400px) {
 	body {
 		padding-top: 136px;
 	}
@@ -5483,6 +5491,9 @@ body {
 				}
 				a {
 					font-size: 16px;
+				}
+				> ul {
+					width: calc(100% + 60px);
 				}
 			}
 		}
@@ -5523,7 +5534,7 @@ body {
 		}
 	}
 }
-/* //1024 이상 1400 이하 */
+/* //1025 이상 1400 이하 */
 
 /* 1200 이상 */
 @media all and (min-width: 1200px) {

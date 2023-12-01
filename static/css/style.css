@@ -3090,7 +3090,7 @@ body {
 /* 1024 이상 */
 @media all and (min-width: 1024px) {
   body {
-    padding-top: 152px;
+    padding-top: 92px;
   }
   .inner-gap-1 {
     max-width: 1760px;
@@ -3274,139 +3274,6 @@ body {
     height: 52px;
     letter-spacing: -0.01em;
     max-width: 240px;
-  }
-  .box-header {
-    padding-top: 78px;
-  }
-  .box-header .inner h1 {
-    height: 74px;
-  }
-  .box-header .inner h1 a {
-    position: absolute;
-    width: 290px;
-    height: 183px;
-    top: -78px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-size: cover;
-    z-index: 1100;
-  }
-  .box-header .inner .btn-menu {
-    display: none;
-  }
-  .box-menu {
-    position: absolute;
-    top: 77px;
-    left: auto;
-    right: auto;
-    height: 74px;
-    background: transparent;
-    opacity: 1;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: auto;
-  }
-  .box-menu h1 {
-    display: none;
-  }
-  .box-menu .btn-close {
-    display: none;
-  }
-  .box-menu > ul {
-    padding: 0;
-    border-top: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 74px;
-  }
-  .box-menu > ul > li {
-    margin-top: 0;
-    width: 120px;
-    height: 100%;
-    margin: 0 60px;
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  .box-menu > ul > li:first-child {
-    margin-top: 0;
-    margin-left: 0;
-  }
-  .box-menu > ul > li:nth-child(2) {
-    margin-right: 246px;
-  }
-  .box-menu > ul > li:nth-child(3) {
-    margin-left: 246px;
-  }
-  .box-menu > ul > li:last-child {
-    margin-right: 0;
-  }
-  .box-menu > ul > li > a {
-    width: 100%;
-    text-align: center;
-    display: block;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: normal;
-    height: auto;
-    cursor: pointer;
-  }
-  .box-menu > ul > li > a:after {
-    display: none;
-  }
-  .box-menu > ul > li.is-active > a {
-    color: #bf9438;
-  }
-  .box-menu > ul > li.is-active > ul {
-    display: none;
-  }
-  .box-menu > ul > li.is-active:not(.no-arrow) > a {
-    color: #bf9438;
-  }
-  .box-menu > ul > li > ul {
-    width: calc(100% + 40px);
-    display: block;
-    padding: 60px 30px 30px;
-    border-radius: 0px 0px 16px 16px;
-    background: linear-gradient(to bottom, transparent 10%, rgb(23, 46, 98) 20%);
-    box-shadow: 10px 0px 10px 0px rgba(23, 46, 98, 0.2);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 45px;
-    margin: 0;
-    z-index: 999;
-    display: none;
-  }
-  .box-menu > ul > li > ul > li {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  .box-menu > ul > li > ul > li + li {
-    margin-top: 16px;
-  }
-  .box-menu > ul > li > ul > li a {
-    width: 100%;
-    color: #EFEFEF;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    height: auto;
-  }
-  .box-menu > ul > li > ul > li:hover a {
-    color: #bf9438;
-  }
-  .box-menu > ul > li > ul:hover {
-    display: block;
-  }
-  .box-menu > ul > li:first-child:hover > ul {
-    display: block;
   }
   .footer .inner-gap-1 {
     padding-top: 88px;
@@ -4959,8 +4826,148 @@ body {
   }
 }
 /* //1024 이상 */
-/* 1024 이상 1400 이하 */
-@media all and (min-width: 1024px) and (max-width: 1400px) {
+/* 1025이상 (1025px 사이즈부터 pc 헤더 노출) */
+@media all and (min-width: 1025px) {
+  body {
+    padding-top: 152px;
+  }
+  .box-header {
+    padding-top: 78px;
+  }
+  .box-header .inner h1 {
+    height: 74px;
+  }
+  .box-header .inner h1 a {
+    position: absolute;
+    width: 290px;
+    height: 183px;
+    top: -78px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    z-index: 1100;
+  }
+  .box-header .inner .btn-menu {
+    display: none;
+  }
+  .box-menu {
+    position: absolute;
+    top: 77px;
+    left: auto;
+    right: auto;
+    height: 74px;
+    background: transparent;
+    opacity: 1;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+  }
+  .box-menu h1 {
+    display: none;
+  }
+  .box-menu .btn-close {
+    display: none;
+  }
+  .box-menu > ul {
+    padding: 0;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+  }
+  .box-menu > ul > li {
+    margin-top: 0;
+    width: 120px;
+    height: 100%;
+    margin: 0 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .box-menu > ul > li:first-child {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .box-menu > ul > li:nth-child(2) {
+    margin-right: 246px;
+  }
+  .box-menu > ul > li:nth-child(3) {
+    margin-left: 246px;
+  }
+  .box-menu > ul > li:last-child {
+    margin-right: 0;
+  }
+  .box-menu > ul > li > a {
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    height: auto;
+    cursor: pointer;
+  }
+  .box-menu > ul > li > a:after {
+    display: none;
+  }
+  .box-menu > ul > li.is-active > a {
+    color: #bf9438;
+  }
+  .box-menu > ul > li.is-active > ul {
+    display: none;
+  }
+  .box-menu > ul > li.is-active:not(.no-arrow) > a {
+    color: #bf9438;
+  }
+  .box-menu > ul > li > ul {
+    width: calc(100% + 40px);
+    display: block;
+    padding: 60px 30px 30px;
+    border-radius: 0px 0px 16px 16px;
+    background: linear-gradient(to bottom, transparent 10%, rgb(23, 46, 98) 15%);
+    box-shadow: 10px 0px 10px 0px rgba(23, 46, 98, 0.2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45px;
+    margin: 0;
+    z-index: 999;
+    display: none;
+  }
+  .box-menu > ul > li > ul > li {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .box-menu > ul > li > ul > li + li {
+    margin-top: 16px;
+  }
+  .box-menu > ul > li > ul > li a {
+    width: 100%;
+    color: #EFEFEF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    height: auto;
+  }
+  .box-menu > ul > li > ul > li:hover a {
+    color: #bf9438;
+  }
+  .box-menu > ul > li > ul:hover {
+    display: block;
+  }
+  .box-menu > ul > li:first-child:hover > ul {
+    display: block;
+  }
+}
+/* 1025이상 (1025px 사이즈부터 pc 헤더 노출) */
+/* 1025 이상 1400 이하 */
+@media all and (min-width: 1025px) and (max-width: 1400px) {
   body {
     padding-top: 136px;
   }
@@ -4992,6 +4999,9 @@ body {
   .box-menu > ul > li a {
     font-size: 16px;
   }
+  .box-menu > ul > li > ul {
+    width: calc(100% + 60px);
+  }
   .footer .inner-gap-1 {
     padding-top: 66px;
     padding-bottom: 80px;
@@ -5020,7 +5030,7 @@ body {
     margin-top: 16px;
   }
 }
-/* //1024 이상 1400 이하 */
+/* //1025 이상 1400 이하 */
 /* 1200 이상 */
 @media all and (min-width: 1200px) {
   .pd-detail-top .inner-gap-1 {
