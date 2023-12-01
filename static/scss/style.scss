@@ -5648,3 +5648,15 @@ body {
 	}
 }
 /* 1500 이상 */
+
+/* 모바일 가로모드 일 경우 */
+@media (orientation: landscape) {
+	.mobile {
+		.footer {
+			&.fixed {
+				display: none;
+			}
+		}
+	}
+}
+/* //모바일 가로모드 일 경우 */
