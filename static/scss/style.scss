@@ -3519,7 +3519,7 @@ body {
 			}
 			.txt-1 {
 				font-size: 18px;
-				font-weight: 400;
+				font-weight: 500;
 				display: inline-block;
 				max-width: 1600px;
 				line-height: 32px;
@@ -4365,6 +4365,7 @@ body {
 			.flex {
 				display: flex;
 				flex-direction: row;
+				align-items: center;
 				.gap-1 {
 					flex: 0 0 34.8vw;
 					.sign {
