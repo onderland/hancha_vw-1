@@ -1415,7 +1415,8 @@ body {
 }
 .sub-top-info .inner-gap-1 .common-title-1 {
   padding-bottom: 25px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 42px;
   position: relative;
 }
 .sub-top-info .inner-gap-1 .common-title-1::after {
@@ -1461,6 +1462,7 @@ body {
 }
 .sub-bg-info .inner-gap-1 .common-title-4 {
   padding-bottom: 25px;
+  font-weight: 500;
   position: relative;
 }
 .sub-bg-info .inner-gap-1 .common-title-4::after {
@@ -1517,6 +1519,8 @@ body {
   padding-bottom: 50px;
 }
 .sub-bg-info.vision .inner-gap-1 .common-title-1 {
+  font-size: 32px;
+  line-height: 42px;
   padding-bottom: 16px;
 }
 .sub-bg-info.vision .vision-swiper {
@@ -1546,7 +1550,7 @@ body {
   position: relative;
 }
 .hancha-bi .inner-gap-1 {
-  padding-top: 52px;
+  padding-top: 50px;
   padding-bottom: 0;
 }
 .hancha-bi .inner-gap-1 .bi-top {
@@ -1562,7 +1566,7 @@ body {
 }
 .hancha-bi .inner-gap-1 .bi-top .logo {
   width: 268px;
-  margin-bottom: 17px;
+  margin-bottom: 21px;
 }
 .hancha-bi .inner-gap-1 .bi-top .logo img {
   width: 100%;
@@ -1707,7 +1711,9 @@ body {
 }
 .sub-top-info.products-all .inner-gap-1 .common-title-1 {
   color: #000;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
+  font-size: 28px;
+  line-height: 38px;
 }
 .sub-top-info.products-all .inner-gap-1 .common-title-1::after {
   display: none;
@@ -2381,6 +2387,8 @@ body {
 }
 .sub-top-info.ourQuality .text-box .common-title-1 {
   padding-bottom: 16px;
+  font-size: 32px;
+  line-height: 42px;
 }
 .sub-top-info.ourQuality .text-box .common-title-1::after {
   display: none;
@@ -2418,6 +2426,8 @@ body {
 }
 .box-ourFormu .inner-gap-1 .common-title-1 {
   padding-bottom: 11px;
+  font-size: 32px;
+  line-height: 42px;
 }
 .box-ourFormu .inner-gap-1 .common-title-5 {
   padding: 4px 0 49px 0;
@@ -2450,6 +2460,8 @@ body {
 .box-process .inner-gap-1 .common-title-1 {
   text-align: center;
   padding-bottom: 19px;
+  font-size: 32px;
+  line-height: 42px;
 }
 .box-process .inner-gap-1 .common-title-7 {
   padding: 0 10px 38px 10px;
@@ -2859,10 +2871,10 @@ body {
   padding: 20px 0 73px 0;
 }
 .teaStory-detail .box-contentList ul li .box-text .btn {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M18.2902 8.49998C17.9002 8.10998 17.2702 8.10998 16.8802 8.49998L12.0002 13.38L7.12022 8.49998C6.73022 8.10998 6.10022 8.10998 5.71022 8.49998C5.32022 8.88998 5.32022 9.51998 5.71022 9.90998L11.3002 15.5C11.6902 15.89 12.3202 15.89 12.7102 15.5L18.3002 9.90998C18.6802 9.52998 18.6802 8.88998 18.2902 8.49998Z' fill='black'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M24.3857 11.3333C23.8657 10.8133 23.0257 10.8133 22.5057 11.3333L15.999 17.84L9.49233 11.3333C8.97233 10.8133 8.13233 10.8133 7.61233 11.3333C7.09233 11.8533 7.09233 12.6933 7.61233 13.2133L15.0657 20.6666C15.5857 21.1866 16.4257 21.1866 16.9457 20.6666L24.399 13.2133C24.9057 12.7066 24.9057 11.8533 24.3857 11.3333Z' fill='black'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
-  height: 24px;
+  height: 32px;
   display: block;
   width: 100%;
   margin: 0;
@@ -3687,6 +3699,7 @@ body {
     max-width: 1920px;
   }
   .sub-top-info.brandStory .inner-gap-1 .common-title-1 {
+    font-size: 52px;
     line-height: 70px;
   }
   .sub-top-info.brandStory .inner-gap-1 .txt-1 {
@@ -3713,15 +3726,17 @@ body {
     margin-left: 0;
   }
   .sub-bg-info.vision .inner-gap-1 {
-    padding-top: 80px;
+    padding-top: 72px;
     padding-bottom: 80px;
   }
   .sub-bg-info.vision .inner-gap-1 .text-box {
     width: 61%;
   }
   .sub-bg-info.vision .inner-gap-1 .text-box .common-title-1 {
+    font-size: 52px;
+    line-height: 70px;
     padding-top: 8px;
-    padding-bottom: 66px;
+    padding-bottom: 33px;
   }
   .sub-bg-info.vision .flex {
     display: flex;
@@ -3857,10 +3872,10 @@ body {
     position: relative;
   }
   .sub-top-info.products-all .inner-gap-1 .common-title-1 {
-    font-size: 52px;
+    font-size: 40px;
     font-weight: 500;
-    line-height: 70px;
-    padding-bottom: 40px;
+    line-height: 52px;
+    padding-bottom: 32px;
   }
   .sub-top-info.products-all .inner-gap-1 .pd-list {
     display: flex;
@@ -3995,7 +4010,7 @@ body {
     margin-top: 0;
   }
   .box-ourFormu .inner-gap-1 {
-    padding-top: 115px;
+    padding-top: 109px;
     padding-bottom: 76px;
   }
   .box-ourFormu .inner-gap-1 .flex {
@@ -4035,14 +4050,16 @@ body {
     margin-bottom: 0;
   }
   .box-ourFormu .inner-gap-1 .common-title-1 {
-    padding-bottom: 42px;
+    padding-bottom: 10px;
     width: 43%;
+    font-size: 52px;
+    line-height: 70px;
   }
   .box-ourFormu .inner-gap-1 .common-title-5 {
     line-height: 53px;
     font-size: 40px;
     position: relative;
-    padding-bottom: 45px;
+    padding-bottom: 50px;
     margin-bottom: 0;
     letter-spacing: 0em;
   }
@@ -4055,11 +4072,13 @@ body {
     padding-bottom: 39px;
   }
   .box-process .inner-gap-1 {
-    padding-top: 87px;
+    padding-top: 106px;
     padding-bottom: 58px;
   }
   .box-process .inner-gap-1 .common-title-1 {
-    padding-bottom: 46px;
+    padding-bottom: 32px;
+    font-size: 52px;
+    line-height: 70px;
   }
   .box-process .inner-gap-1 .common-title-7 {
     font-size: 40px;
