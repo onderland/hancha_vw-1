@@ -768,7 +768,7 @@ body {
 .common-btn-1 {
 	color: #fff;
 	font-family: Open Sans;
-	font-size: 18px;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
@@ -776,7 +776,7 @@ body {
 	display: flex;
 	width: 100%;
 	margin: 0 auto;
-	padding: 17px 49.5px;
+	padding: 17px 50px;
 	max-width: 220px;
 	justify-content: center;
 	align-items: center;
@@ -802,7 +802,7 @@ body {
 .common-btn-2 {
 	color: #1a3981;
 	font-family: Open Sans;
-	font-size: 18px;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
@@ -810,9 +810,9 @@ body {
 	display: flex;
 	width: 100%;
 	margin: 0 auto;
-	padding: 16px 49.5px 17px;
+	padding: 16px 50px 17px;
 	max-width: 220px;
-	height: 57px;
+	height: 54px;
 	justify-content: center;
 	align-items: center;
 	gap: 8px;
@@ -1179,7 +1179,7 @@ body {
 					display: block;
 					.img-holder {
 						span {
-							padding-top: 124%;
+							padding-top: 125%;
 							position: relative;
 							&:after {
 								transition: all 0.4s;
@@ -1236,13 +1236,13 @@ body {
 							text-align: center;
 							text-overflow: ellipsis;
 							font-family: Open Sans;
-							font-size: 16px;
+							font-size: 14px;
 							font-style: normal;
 							font-weight: 500;
 							border-bottom: 2px solid #1A3981;
 							padding-bottom: 3px;
 							position: relative;
-							top: -5px;
+							top: -8px;
 						}
 					}
 					&:hover {
@@ -3544,7 +3544,7 @@ body {
 
 	// 공통 btn
 	.common-btn-1 {
-		font-size: 18px;
+		font-size: 16px;
 		padding: 16px 51px;
 		margin: 0 0;
 		max-width: 240px;
@@ -3555,6 +3555,7 @@ body {
 	}
 	
 	.common-btn-2 {
+		font-size: 16px;
 		max-width: 240px;
 	}
 
@@ -3708,6 +3709,12 @@ body {
 									font-size: 40px;
 									line-height: 54px;
 								}
+							}
+						}
+						.text-2 {
+							span {
+								font-size: 16px;
+								top: -5px;
 							}
 						}
 					}
