@@ -1139,6 +1139,9 @@ body {
 			&.mob {
 				display: block;
 				letter-spacing: 0.2px;
+				span {
+					display: none;
+				}
 			}
 		}
 		.common-btn-2 {
@@ -1397,8 +1400,9 @@ body {
 					z-index: 2;
 					transform: scale(0.65);
 					transition: transform 0.5s;
+					box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
 					span {
-						width: 156px;
+						width: 135px;
 						height: 232px;
 						padding-top: 0;
 						//box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.12); 202312014
@@ -1498,7 +1502,7 @@ body {
 		display: block;
 		background: url(../images/bg/products_mo_pattern.png) no-repeat;
 		width: 156px;
-		height: 183px;
+		height: 237px;
 		background-size: contain;
 		position: absolute;
 		left: 0;
@@ -1885,8 +1889,10 @@ body {
 						}
 					}
 					.pd-img {
-						width: 84px;
-						//box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.12); 20231204 box-shadow 기능 삭제.
+						width: 73px;
+						box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.12);
+						border-radius: 2px;
+						overflow: hidden;
 						img {
 							width: 100%;
 							height: 100%;
@@ -1945,13 +1951,15 @@ body {
 			background: #f8f5ee;
 			padding: 40px 24px;
 			.pd-img {
-				width: 236px;
+				width: 204px;
 				height: 351px;
 				position: absolute;
 				left: 50%;
 				transform: translateX(-50%);
 				top: -330px;
-				//box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.12); 20231204 box-shadow 기능 삭제.
+				box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.12);
+				border-radius: 2px;
+				overflow: hidden;
 				img {
 					width: 100%;
 					height: 100%;
@@ -2994,6 +3002,9 @@ body {
 		padding-right: 0;
 		padding-top: 0;
 		padding-bottom: 0;
+		.common-title-8 {
+			text-transform: none;
+		}
 	}
 	.top-intro {
 		padding: 20px 0 28px 0;
@@ -3254,6 +3265,19 @@ body {
 				& + li {
 					margin-top: 32px;
 				}
+				&:last-child {
+					.box-text {
+						.btn {
+							border-bottom: none;
+						}
+						.inner-text {
+							padding-bottom: 0;
+							.text-1 {
+								padding-bottom: 0;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -3296,13 +3320,17 @@ body {
 
 /* 768 이상 */
 @media all and (min-width: 768px) {
-	// .box-teaStory {
-	// 	.inner-gap-1 {
-	// 		.txt-1 {
-	// 			display: block;
-	// 		}
-	// 	}
-	// }
+	.box-teaStory {
+		.inner-gap-1 {
+			.txt-1 {
+				&.mob {
+					span {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
 
 	.subStory {
 		.story-list {
@@ -3798,7 +3826,7 @@ body {
 					.img-holder {
 						transform: scale(0.67);
 						span {
-							width: 254px;
+							width: 220px;
 							height: 378px;
 							img {
 							}
@@ -3922,7 +3950,7 @@ body {
 	}
 
 	.sub-top-info {
-		background: url(../images/bg/pc_pattern_02.png) no-repeat;
+		background: url(../images/bg/products_pc_top.png) no-repeat;
 		background-position: 100% 0;
 		.inner-gap-1 {
 			//padding-top: 120px;
@@ -4274,7 +4302,7 @@ body {
 							margin-top: 0;
 						}
 						.pd-img {
-							width: 237px;
+							width: 205px;
 						}
 						.txt-1 {
 							font-size: 24px;
@@ -4361,6 +4389,7 @@ body {
 					font-size: 40px;
 					line-height: 52px;
 					letter-spacing: 0em;
+					padding-right: 20px;
 					&::after {
 						width: 33px;
 					}
@@ -4572,7 +4601,7 @@ body {
 				justify-content: space-between;
 				gap: 0 40px;
 				.pd-img {
-					width: 333px;
+					width: 288px;
 					height: auto;
 					position: relative;
 					left: auto;
@@ -4588,8 +4617,8 @@ body {
 				}
 				.right {
 					width: 100%;
-					max-width: 706px;
-					min-height: 495px;
+					max-width: 752px;
+					min-height: 496px;
 					background: #fff;
 					padding: 20px 40px;
 					display: flex;
@@ -4611,13 +4640,13 @@ body {
 	.box-ingredients {
 		&::before {
 			content: "";
-			width: 234px;
-			height: 350px;
+			width: 250px;
+			height: 329px;
 			background: url(../images/bg/detail_pc_pattern_01.png) no-repeat;
 			position: absolute;
 			background-size: contain;
 			background-position: center;
-			top: 3px;
+			top: 0;
 			right: 0;
 		}
 		&::after {
@@ -4963,7 +4992,7 @@ body {
 	// teaStories
 	.subStory {
 		background: url(../images/bg/teaStory_pc_pattern.png) no-repeat;
-		background-position: 100% -4px;
+		background-position: 105% -4px;
 		position: relative;
 		&::after {
 			content: "";
@@ -5233,8 +5262,7 @@ body {
 		.box-accordion {
 			width: 100%;
 			position: relative;
-			padding-bottom: 0;
-			margin-bottom: -20px;
+			padding-bottom: 78px;
 			> ul {
 				> li {
 					width: 100%;
@@ -5256,7 +5284,6 @@ body {
 							display: flex;
 							align-items: flex-start;
 							justify-content: space-between;
-							align-items: center;
 							gap: 0 40px;
 							.text-1 {
 								display: block;

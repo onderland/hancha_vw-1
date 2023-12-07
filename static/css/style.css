@@ -1082,6 +1082,9 @@ body {
   display: block;
   letter-spacing: 0.2px;
 }
+.box-teaStory .inner-gap-1 .txt-1.mob span {
+  display: none;
+}
 .box-teaStory .inner-gap-1 .common-btn-2 {
   margin-top: 34px;
 }
@@ -1309,9 +1312,10 @@ body {
   z-index: 2;
   transform: scale(0.65);
   transition: transform 0.5s;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
 }
 .box-bestProducts .swiper-best .item .box-bg .img-holder span {
-  width: 156px;
+  width: 135px;
   height: 232px;
   padding-top: 0;
 }
@@ -1397,7 +1401,7 @@ body {
   display: block;
   background: url(../images/bg/products_mo_pattern.png) no-repeat;
   width: 156px;
-  height: 183px;
+  height: 237px;
   background-size: contain;
   position: absolute;
   left: 0;
@@ -1751,7 +1755,10 @@ body {
   position: relative;
 }
 .sub-top-info.products-all .inner-gap-1 .pd-list .item .pd-img {
-  width: 84px;
+  width: 73px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  overflow: hidden;
 }
 .sub-top-info.products-all .inner-gap-1 .pd-list .item .pd-img img {
   width: 100%;
@@ -1810,12 +1817,15 @@ body {
   padding: 40px 24px;
 }
 .pd-detail-top .inner-gap-1 .inner .pd-img {
-  width: 236px;
+  width: 204px;
   height: 351px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: -330px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  overflow: hidden;
 }
 .pd-detail-top .inner-gap-1 .inner .pd-img img {
   width: 100%;
@@ -2817,6 +2827,9 @@ body {
   padding-top: 0;
   padding-bottom: 0;
 }
+.teaStory-detail .inner-gap-1 .common-title-8 {
+  text-transform: none;
+}
 .teaStory-detail .top-intro {
   padding: 20px 0 28px 0;
 }
@@ -3039,6 +3052,15 @@ body {
 .teaStory-detail .box-accordion > ul > li + li {
   margin-top: 32px;
 }
+.teaStory-detail .box-accordion > ul > li:last-child .box-text .btn {
+  border-bottom: none;
+}
+.teaStory-detail .box-accordion > ul > li:last-child .box-text .inner-text {
+  padding-bottom: 0;
+}
+.teaStory-detail .box-accordion > ul > li:last-child .box-text .inner-text .text-1 {
+  padding-bottom: 0;
+}
 .teaStory-detail .box-cere {
   padding-bottom: 27px;
 }
@@ -3078,6 +3100,9 @@ body {
 
 /* 768 이상 */
 @media all and (min-width: 768px) {
+  .box-teaStory .inner-gap-1 .txt-1.mob span {
+    display: inline-block;
+  }
   .subStory .story-list {
     display: flex;
     align-items: center;
@@ -3506,7 +3531,7 @@ body {
     transform: scale(0.67);
   }
   .box-bestProducts .swiper-best .item .box-bg .img-holder span {
-    width: 254px;
+    width: 220px;
     height: 378px;
   }
   .box-bestProducts .swiper-best .item .box-text {
@@ -3621,7 +3646,7 @@ body {
     margin-top: 20px;
   }
   .sub-top-info {
-    background: url(../images/bg/pc_pattern_02.png) no-repeat;
+    background: url(../images/bg/products_pc_top.png) no-repeat;
     background-position: 100% 0;
   }
   .sub-top-info .inner-gap-1 {
@@ -3914,7 +3939,7 @@ body {
     margin-top: 0;
   }
   .sub-top-info.products-all .inner-gap-1 .pd-list .item .pd-img {
-    width: 237px;
+    width: 205px;
   }
   .sub-top-info.products-all .inner-gap-1 .pd-list .item .txt-1 {
     font-size: 24px;
@@ -3994,6 +4019,7 @@ body {
     font-size: 40px;
     line-height: 52px;
     letter-spacing: 0em;
+    padding-right: 20px;
   }
   .sub-top-info.ourQuality .text-box .common-title-5::after {
     width: 33px;
@@ -4188,7 +4214,7 @@ body {
     gap: 0 40px;
   }
   .pd-detail-top .inner-gap-1 .inner .pd-img {
-    width: 333px;
+    width: 288px;
     height: auto;
     position: relative;
     left: auto;
@@ -4204,8 +4230,8 @@ body {
   }
   .pd-detail-top .inner-gap-1 .inner .right {
     width: 100%;
-    max-width: 706px;
-    min-height: 495px;
+    max-width: 752px;
+    min-height: 496px;
     background: #fff;
     padding: 20px 40px;
     display: flex;
@@ -4222,13 +4248,13 @@ body {
   }
   .box-ingredients::before {
     content: "";
-    width: 234px;
-    height: 350px;
+    width: 250px;
+    height: 329px;
     background: url(../images/bg/detail_pc_pattern_01.png) no-repeat;
     position: absolute;
     background-size: contain;
     background-position: center;
-    top: 3px;
+    top: 0;
     right: 0;
   }
   .box-ingredients::after {
@@ -4532,7 +4558,7 @@ body {
   }
   .subStory {
     background: url(../images/bg/teaStory_pc_pattern.png) no-repeat;
-    background-position: 100% -4px;
+    background-position: 105% -4px;
     position: relative;
   }
   .subStory::after {
@@ -4776,8 +4802,7 @@ body {
   .teaStory-detail .box-accordion {
     width: 100%;
     position: relative;
-    padding-bottom: 0;
-    margin-bottom: -20px;
+    padding-bottom: 78px;
   }
   .teaStory-detail .box-accordion > ul > li {
     width: 100%;
@@ -4799,7 +4824,6 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
     gap: 0 40px;
   }
   .teaStory-detail .box-accordion > ul > li .box-text .inner-text .text-1 {
