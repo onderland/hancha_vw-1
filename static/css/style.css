@@ -2830,6 +2830,29 @@ body {
 .teaStory-detail .inner-gap-1 .common-title-8 {
   text-transform: none;
 }
+.teaStory-detail .inner-gap-1.cere .top-intro {
+  padding-bottom: 0;
+}
+.teaStory-detail .inner-gap-1.cere .text-1 {
+  letter-spacing: -0.01px;
+}
+.teaStory-detail .inner-gap-1.cere .text-1:last-child {
+  padding-bottom: 20px;
+}
+.teaStory-detail .inner-gap-1.cere .cere-box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 42px;
+}
+.teaStory-detail .inner-gap-1.cere .cere-box .img-box {
+  width: 100%;
+}
+.teaStory-detail .inner-gap-1.cere .cere-box .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .teaStory-detail .top-intro {
   padding: 20px 0 28px 0;
 }
@@ -2898,6 +2921,9 @@ body {
 .teaStory-detail .box-contentList ul li .box-text .inner-text {
   display: none;
   margin: 20px 0 0 0;
+}
+.teaStory-detail .box-contentList ul li .box-text .inner-text .text-1:last-child {
+  padding-bottom: 20px;
 }
 .teaStory-detail .box-contentList ul li .box-text.text-open .btn {
   transform: rotate(180deg);
@@ -4649,6 +4675,37 @@ body {
     padding-left: 80px;
     padding-right: 80px;
   }
+  .teaStory-detail .inner-gap-1.cere .top-intro {
+    padding-bottom: 120px;
+  }
+  .teaStory-detail .inner-gap-1.cere .top-intro .img-1 {
+    margin-bottom: 0;
+  }
+  .teaStory-detail .inner-gap-1.cere .text-1:last-child {
+    padding-bottom: 20px;
+  }
+  .teaStory-detail .inner-gap-1.cere .cere-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0 40px;
+    padding-bottom: 81px;
+  }
+  .teaStory-detail .inner-gap-1.cere .cere-box .text-box {
+    padding: 0 40px;
+    width: 100%;
+    max-width: 770px;
+  }
+  .teaStory-detail .inner-gap-1.cere .cere-box .text-box .text-1 {
+    letter-spacing: -0.1px;
+  }
+  .teaStory-detail .inner-gap-1.cere .cere-box .text-box .text-1 + .text-1 {
+    display: block;
+    padding-top: 16px;
+  }
+  .teaStory-detail .inner-gap-1.cere .cere-box .img-box {
+    width: 100%;
+  }
   .teaStory-detail .top-intro {
     padding-top: 40px;
     padding-bottom: 121px;
@@ -4680,6 +4737,10 @@ body {
   .teaStory-detail .text-1 + .text-1 {
     padding-top: 0;
     padding-left: 0;
+  }
+  .teaStory-detail .text-1 + .text-1.margin {
+    display: block;
+    padding-top: 16px;
   }
   .teaStory-detail .text-2 {
     font-size: 32px;

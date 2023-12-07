@@ -3005,6 +3005,30 @@ body {
 		.common-title-8 {
 			text-transform: none;
 		}
+		&.cere {
+			.top-intro {
+				padding-bottom: 0;
+			}
+			.text-1 {
+				letter-spacing: -0.01px;
+				&:last-child {
+					padding-bottom: 20px;
+				}
+			}
+			.cere-box {
+				display: flex;
+				flex-direction: column;
+				padding-bottom: 42px;
+				.img-box {
+					width: 100%;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+		}
 	}
 	.top-intro {
 		padding: 20px 0 28px 0;
@@ -3089,6 +3113,11 @@ body {
 					.inner-text {
 						display: none;
 						margin: 20px 0 0 0;
+						.text-1 {
+							&:last-child {
+								padding-bottom: 20px;
+							}
+						}
 					}
 					&.text-open {
 						.btn {
@@ -5087,6 +5116,41 @@ body {
 			padding-bottom: 49px;
 			padding-left: 80px;
 			padding-right: 80px;
+			&.cere {
+				.top-intro {
+					padding-bottom: 120px;
+					.img-1 {
+						margin-bottom: 0;
+					}
+				}
+				.text-1 {
+					&:last-child {
+						padding-bottom: 20px;
+					}
+				}
+				.cere-box {
+					display: flex;
+					flex-direction: row;
+					align-items: flex-start;
+					gap: 0 40px;
+					padding-bottom: 81px;
+					.text-box {
+						padding: 0 40px;
+						width: 100%;
+						max-width: 770px;
+						.text-1 {
+							letter-spacing: -0.1px;
+							& + .text-1 {
+								display: block;
+								padding-top: 16px;
+							}
+						}
+					}
+					.img-box {
+						width: 100%;
+					}
+				}
+			}
 		}
 		.top-intro {
 			padding-top: 40px;
@@ -5120,6 +5184,10 @@ body {
 			& + .text-1 {
 				padding-top: 0;
 				padding-left: 0;
+				&.margin {
+					display: block;
+					padding-top: 16px;
+				}
 			}
 		}
 		.text-2 {
