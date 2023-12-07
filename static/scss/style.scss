@@ -4895,12 +4895,12 @@ body {
 	// contact
 	.box-contact {
 		&::before {
-			background: url(../images/bg/detail_pc_pattern_01.png) no-repeat;
+			background: url(../images/bg/contact_pc_top.png) no-repeat;
 			background-size: cover;
 			background-position: center;
 			width: 234px;
-			height: 283px;
-			top: 0;
+			height: 350px;
+			top: -67px;
 		}
 		&::after {
 			background: url(../images/bg/detail_pc_pattern_02.png) no-repeat;
