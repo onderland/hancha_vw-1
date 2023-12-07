@@ -183,7 +183,7 @@ if (window.console == undefined) { console = { log: () => { } } }
 		},
 		_click: () => {
 			const tg = '[data-include="upBtn"]',
-				upBtn = document.querySelector(tg + ' a');
+						upBtn = document.querySelector(tg + ' a');
 
 			upBtn.addEventListener('click', (e) => {
 				e.preventDefault();
@@ -681,7 +681,7 @@ window.onload = () => {
 	setTimeout(() => {
 		headerMenu.initialize();
 		footerUpBtn.initialize();
-	}, 100)
+	}, 200)
 }
 
 // 공통 js 호출
