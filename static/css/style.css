@@ -146,18 +146,14 @@ table {
 
 textarea {
   overflow: auto;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   resize: vertical;
   font-size: 100%;
 }
 
 input,
 select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   font-family: inherit;
   border-radius: 0;
   font-size: 100%;
@@ -205,34 +201,25 @@ input[type=search],
 input[type=number],
 input[type=tel],
 input[type=email] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 input:checked[type=checkbox] {
   background-color: #666;
-  -webkit-appearance: checkbox;
-     -moz-appearance: checkbox;
-          appearance: checkbox;
+  appearance: checkbox;
 }
 
 input:checked[type=checkbox] {
-  -webkit-appearance: checkbox;
-     -moz-appearance: checkbox;
-          appearance: checkbox;
+  appearance: checkbox;
 }
 
 input[type=search] {
-  -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 button,
@@ -245,9 +232,7 @@ button,
 [type=submit],
 [type=reset],
 [type=file] {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  appearance: button;
   border-radius: 0;
   cursor: pointer;
 }
@@ -349,18 +334,26 @@ input {
   display: block;
   margin: 4px auto;
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .box-header .inner .btn-menu .hamburger.is-active .line {
   width: 24px;
 }
 .box-header .inner .btn-menu .hamburger.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+  -ms-transform: translateY(6px) rotate(45deg);
+  -o-transform: translateY(6px) rotate(45deg);
   transform: translateY(6px) rotate(45deg);
 }
 .box-header .inner .btn-menu .hamburger.is-active .line:nth-child(2) {
   opacity: 0;
 }
 .box-header .inner .btn-menu .hamburger.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+  -ms-transform: translateY(-6px) rotate(-45deg);
+  -o-transform: translateY(-6px) rotate(-45deg);
   transform: translateY(-6px) rotate(-45deg);
 }
 
@@ -550,7 +543,6 @@ input {
   gap: 0 8px;
 }
 .footer-inner .ft-top .right .qr-box .box {
-  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -565,8 +557,7 @@ input {
 .footer-inner .ft-top .right .qr-box .box .store-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .footer-inner .ft-bottom {
   width: 100%;
@@ -587,8 +578,7 @@ input {
 .footer-inner .ft-bottom .logo a img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .footer-inner .ft-bottom .rights {
   color: #fff;
@@ -1015,8 +1005,7 @@ body {
 .box-aboutUs .left img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .box-aboutUs .right {
   padding: 0 16px 0 16px;
@@ -1519,8 +1508,7 @@ body {
 .sub-top-info.brandStory .top-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-left: -16px;
 }
 
@@ -1551,8 +1539,7 @@ body {
 .sub-bg-info.vision .vision-swiper .swiper-wrapper .swiper-slide > img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hancha-bi {
@@ -1581,8 +1568,7 @@ body {
 .hancha-bi .inner-gap-1 .bi-top .logo img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .hancha-bi .inner-gap-1 .bi-top .txt-1 {
   color: #4b4b4b;
@@ -1603,7 +1589,6 @@ body {
 }
 .hancha-bi .inner-gap-1 .bi-middle-swiper .swiper-wrapper .item {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   position: relative;
   padding: 0 17.5px;
@@ -1616,8 +1601,7 @@ body {
 .hancha-bi .inner-gap-1 .bi-middle-swiper .swiper-wrapper .item .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .hancha-bi .inner-gap-1 .bi-middle-swiper .swiper-wrapper .item .txt {
   color: #000;
@@ -1770,8 +1754,7 @@ body {
 .sub-top-info.products-all .inner-gap-1 .pd-list .item .pd-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .sub-top-info.products-all .inner-gap-1 .pd-list .item .txt-1 {
   color: #000;
@@ -1794,7 +1777,6 @@ body {
 .sub-top-info.products-all .inner-gap-1 .pd-list .item .go-btn {
   display: none;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 12px 0;
   text-align: center;
@@ -1809,7 +1791,6 @@ body {
 
 .pd-detail-top {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   position: relative;
   background-size: cover !important;
@@ -1837,8 +1818,7 @@ body {
 .pd-detail-top .inner-gap-1 .inner .pd-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .pd-detail-top .inner-gap-1 .inner .common-title-1 {
   padding-bottom: 8px;
@@ -1868,8 +1848,7 @@ body {
 .pd-detail-top .inner-gap-1 .inner .tea-info .item .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .pd-detail-top .inner-gap-1 .inner .tea-info .item .txt {
   margin-left: 8px;
@@ -2106,8 +2085,7 @@ body {
 .box-ingredients .inner-gap-1 .ingredient-swiper .item .img img {
   width: 149px;
   height: 149px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
 }
 .box-ingredients .inner-gap-1 .ingredient-swiper .item .text {
@@ -2334,8 +2312,7 @@ body {
 .recommend-pd .inner-gap-1 .recommend-swiper .item a .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .recommend-pd .inner-gap-1 .recommend-swiper .item a .name {
   color: #fff;
@@ -2798,8 +2775,7 @@ body {
 .subStory .story-list .item .inner .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .subStory .story-list .item + .item {
   margin-top: 28px;
@@ -2818,8 +2794,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -2857,8 +2832,7 @@ body {
 .teaStory-detail .inner-gap-1.cere .cere-box .img-box img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .teaStory-detail .top-intro {
   padding: 20px 0 28px 0;
@@ -2870,8 +2844,7 @@ body {
 }
 .teaStory-detail .top-intro .img .img-1 {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .teaStory-detail .top-intro .img-1 {
   width: 100%;
@@ -2903,8 +2876,7 @@ body {
 .teaStory-detail .box-contentList ul li .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .teaStory-detail .box-contentList ul li .box-text {
   padding: 20px 0 85px 0;
@@ -3010,8 +2982,7 @@ body {
 .teaStory-detail .storyImg-swiper .item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .teaStory-detail .box-accordion {
   width: 100%;
@@ -3069,8 +3040,7 @@ body {
 .teaStory-detail .box-accordion > ul > li .box-text .inner-text .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .teaStory-detail .box-accordion > ul > li .box-text.text-open .btn {
   padding-bottom: 0;
@@ -3287,8 +3257,7 @@ body {
     max-width: 920px;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     transform: translate(0, 0) scale(1);
   }
   .box-aboutUs .right {
@@ -3411,7 +3380,6 @@ body {
     position: relative;
   }
   .footer-inner .ft-top .right .location-box {
-    width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 0;
     width: 631px;
@@ -3446,8 +3414,7 @@ body {
   .footer-inner .ft-top .right .up-btn a img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .footer-inner .ft-bottom {
     width: 100%;
@@ -4043,7 +4010,6 @@ body {
   }
   .sub-top-info.ourQuality .text-box {
     flex-direction: row !important;
-    height: -moz-fit-content !important;
     height: fit-content !important;
   }
   .sub-top-info.ourQuality .text-box div:first-child {
@@ -4061,7 +4027,6 @@ body {
   .sub-top-info.ourQuality .text-box .txt-1 {
     font-size: 18px;
     line-height: 26px;
-    width: -moz-fit-content;
     width: fit-content;
     letter-spacing: 0.01em;
     display: inline;
@@ -4259,8 +4224,7 @@ body {
   .pd-detail-top .inner-gap-1 .inner .pd-img img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .pd-detail-top .inner-gap-1 .inner .right {
     width: 100%;
@@ -4911,8 +4875,7 @@ body {
   .teaStory-detail .box-accordion > ul > li .box-text .inner-text .img img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .teaStory-detail .box-accordion > ul > li .box-text.text-open .btn {
     padding-bottom: 20px;
